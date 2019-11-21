@@ -26,8 +26,6 @@ DATE=`(date +"%Y%m%d")`
 
 YEAR=`(date +"%Y")`
 
-#COPYRIGHT="STV ${NEW_MODULE_VERSION} ${DATE} &copy; Copyright 2010 - ${YEAR} [Sensible Cocoa](http://sensiblecocoa.com/) and &copy; Copyright ${YEAR}  [dgApps](http://dgapps.ie/) under the [MIT license](https://github.com/daveguerin/STV/blob/master/License/STV.txt)"
-
 COPYRIGHT="copyright: \"[STV ${NEW_MODULE_VERSION}](https://github.com/daveguerin/STV/) ${DATE}<br />&copy; Copyright 2010 - ${YEAR} [Sensible Cocoa](http://sensiblecocoa.com/)<br />&copy; Copyright ${YEAR} [dgApps](http://dgapps.ie/)<br />[License](https://github.com/daveguerin/STV/blob/master/License/STV.txt)\""
 
 echo "\n**** STVDocumentation Updating to "$NEW_MODULE_VERSION
@@ -40,42 +38,45 @@ echo "${COPYRIGHT}" >> .jazzy.yaml
 STV="STV "
 
 # replaces the first line with STV 6.0.1(2) for example
-sed -i '' '1 s/^#.*$/'"# $STV $NEW_MODULE_VERSION"'/' Documentation.md
+sed -i '' '1 s/^#.*$/'"# $STV $NEW_MODULE_VERSION"'/' DOCUMENTATION.md
 
 
-#jazzy
+jazzy
 
 echo "\n**** STVDocumentation Committing STV"
 
 COMMIT_MESSAGE="STVDocumentation Updated to ${NEW_MODULE_VERSION}"
 
-#git add .jazzy.yaml
-#git add Documentation.md
-#git commit -m "$COMMIT_MESSAGE"
+git add .jazzy.yaml
+git add DOCUMENTATION.md
+git commit -m "$COMMIT_MESSAGE"
 
 echo "\n**** STVDocumentation Pushing STV"
 
-#git push GitHub master
+git push GitHub master
 
 
 echo "\n**** STVDocumentation Committing STVDocumentation"
 
 cd ~/Xcode/@Documentation/STVDocumentation/
 
-#git add --all
+git add --all
 
-#git commit -m "$COMMIT_MESSAGE"
+git commit -m "$COMMIT_MESSAGE"
 
 
 echo "\n**** STVDocumentation Tagging STVDocumentation"
 
 
-#git tag -a "${NEW_MODULE_VERSION}" -m "${NEW_MODULE_VERSION}"
+git tag -a "${NEW_MODULE_VERSION}" -m "${NEW_MODULE_VERSION}"
 
 
 echo "**** STVDocumentation Pushing STVDocumentation"
 
-#git push GitHub master --tags
+git push GitHub master --tags
 
 
 echo "\n\n**** STVDocumentation Updated ****\n\n\n\n\n\n\n"
+
+
+
