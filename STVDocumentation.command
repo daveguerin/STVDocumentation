@@ -41,8 +41,6 @@ echo "\n**** STVDocumentation Committing STVDocumentation"
 
 cd ~/Xcode/@Documentation/STVDocumentation/
 
-ls -l
-
 git add --all
 
 git commit -m "$COMMIT_MESSAGE"
