@@ -40,41 +40,7 @@ STV="STV "
 # replaces the first line with STV 6.0.1(2) for example
 sed -i '' '1 s/^#.*$/'"# $STV $NEW_MODULE_VERSION"'/' DOCUMENTATION.md
 
-
 jazzy
-
-echo "\n**** STVDocumentation Committing STV"
-
-COMMIT_MESSAGE="STVDocumentation Updated to ${NEW_MODULE_VERSION}"
-
-git add .jazzy.yaml
-git add DOCUMENTATION.md
-git commit -m "$COMMIT_MESSAGE"
-
-echo "\n**** STVDocumentation Pushing STV"
-
-git push GitHub master
-
-
-echo "\n**** STVDocumentation Committing STVDocumentation"
-
-cd ~/Xcode/@Documentation/STVDocumentation/
-
-git add --all
-
-git commit -m "$COMMIT_MESSAGE"
-
-
-echo "\n**** STVDocumentation Tagging STVDocumentation"
-
-
-git tag -a "${NEW_MODULE_VERSION}" -m "${NEW_MODULE_VERSION}"
-
-
-echo "**** STVDocumentation Pushing STVDocumentation"
-
-git push GitHub master --tags
-
 
 echo "\n\n**** STVDocumentation Updated ****\n\n\n\n\n\n\n"
 
