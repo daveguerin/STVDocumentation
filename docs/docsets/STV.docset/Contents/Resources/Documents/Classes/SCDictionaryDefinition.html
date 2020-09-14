@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCDictionaryDefinition</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCDictionaryDefinition</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCDataDefinition.html">SCDataDefinition</a></span></code></pre>
 
                 </div>
@@ -603,15 +601,15 @@ keys of their bound mutable dictionaries. </p>
 
 <p>Sample use:
    // Define the dictionary using SCDictionaryDefinition
-   SCDictionaryDefinition *dictionaryDef = [SCDictionaryDefinition definitionWithDictionaryKeyNamesString:@<q>key1;key2;key3</q>];
-   [dictionaryDef propertyDefinitionWithName:@<q>key2</q>].type = SCPropertyTypeSwitch;
-   [dictionaryDef propertyDefinitionWithName:@<q>key3</q>].type = SCPropertyTypeSlider;</p>
+   SCDictionaryDefinition *dictionaryDef = [SCDictionaryDefinition definitionWithDictionaryKeyNamesString:@&ldquo;key1;key2;key3&rdquo;];
+   [dictionaryDef propertyDefinitionWithName:@&ldquo;key2&rdquo;].type = SCPropertyTypeSwitch;
+   [dictionaryDef propertyDefinitionWithName:@&ldquo;key3&rdquo;].type = SCPropertyTypeSlider;</p>
 
 <p>// Create some sample data
    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-   [dictionary setValue:@<q>Text</q> forKey:@<q>key1</q>];
-   [dictionary setValue:[NSNumber numberWithBool:YES] forKey:@<q>key2</q>];
-   [dictionary setValue:[NSNumber numberWithFloat:0.7f] forKey:@<q>key3</q>];</p>
+   [dictionary setValue:@&ldquo;Text&rdquo; forKey:@&ldquo;key1&rdquo;];
+   [dictionary setValue:[NSNumber numberWithBool:YES] forKey:@&ldquo;key2&rdquo;];
+   [dictionary setValue:[NSNumber numberWithFloat:0.7f] forKey:@&ldquo;key3&rdquo;];</p>
 
 <p>// Generate sections for the dictionary
    [self.tableViewModel generateSectionsForObject:dictionary withDefinition:dictionaryDef];</p>
@@ -621,6 +619,9 @@ keys of their bound mutable dictionaries. </p>
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L41-L106">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -630,9 +631,11 @@ keys of their bound mutable dictionaries. </p>
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -640,7 +643,7 @@ keys of their bound mutable dictionaries. </p>
                     <code>
                     <a name="/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNamesString:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithDictionaryKeyNamesString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNamesString:">+definitionWithDictionaryKeyNamesString:</a>
+                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNamesString:">+definitionWithDictionaryKeyNamesString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -653,8 +656,8 @@ keys of their bound mutable dictionaries. </p>
 <p>By default, all property definitions generated for the given keyNames will have a type of SCPropertyTypeTextField. This can be fully customized after initialization.</p>
 
 <p>Key names string syntax options:
-    @<q>key1;key2;key3;&hellip;</q>
-    @<q>group1 header:(key1, key2,&hellip;):group1 footer;group2&hellip;</q></p>
+    @&ldquo;key1;key2;key3;&hellip;&rdquo;
+    @&ldquo;group1 header:(key1, key2,&hellip;):group1 footer;group2&hellip;&rdquo;</p>
 
                       </div>
                       <div class="declaration">
@@ -678,7 +681,7 @@ keys of their bound mutable dictionaries. </p>
                               </td>
                               <td>
                                 <div>
-                                  <p>A string with the key names separated by semi-colons. Example string: @<q>firstName;lastName</q>. Property groups can also be defined in the string using the following format: @<q>Personal Details:(firstName, lastName); Address:(street, state, country)</q>. The group title can also be ommitted to create a group with no title. For example: @<q>:(firstName, lastName)</q>.</p>
+                                  <p>A string with the key names separated by semi-colons. Example string: @&ldquo;firstName;lastName&rdquo;. Property groups can also be defined in the string using the following format: @&ldquo;Personal Details:(firstName, lastName); Address:(street, state, country)&rdquo;. The group title can also be ommitted to create a group with no title. For example: @&ldquo;:(firstName, lastName)&rdquo;.</p>
                                 </div>
                               </td>
                             </tr>
@@ -686,7 +689,7 @@ keys of their bound mutable dictionaries. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDictionaryDefinition.h#L57">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L57">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -696,7 +699,7 @@ keys of their bound mutable dictionaries. </p>
                     <code>
                     <a name="/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNames:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithDictionaryKeyNames:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNames:">+definitionWithDictionaryKeyNames:</a>
+                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNames:">+definitionWithDictionaryKeyNames:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -737,7 +740,7 @@ keys of their bound mutable dictionaries. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDictionaryDefinition.h#L65">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L65">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -747,7 +750,7 @@ keys of their bound mutable dictionaries. </p>
                     <code>
                     <a name="/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNames:keyTitles:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithDictionaryKeyNames:keyTitles:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNames:keyTitles:">+definitionWithDictionaryKeyNames:keyTitles:</a>
+                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(cm)definitionWithDictionaryKeyNames:keyTitles:">+definitionWithDictionaryKeyNames:<wbr>keyTitles:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -801,7 +804,7 @@ keys of their bound mutable dictionaries. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDictionaryDefinition.h#L74">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -811,7 +814,7 @@ keys of their bound mutable dictionaries. </p>
                     <code>
                     <a name="/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNamesString:"></a>
                     <a name="//apple_ref/objc/Method/-initWithDictionaryKeyNamesString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNamesString:">-initWithDictionaryKeyNamesString:</a>
+                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNamesString:">-initWithDictionaryKeyNamesString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -824,8 +827,8 @@ keys of their bound mutable dictionaries. </p>
 <p>By default, all property definitions generated for the given keyNames will have a type of SCPropertyTypeTextField. This can be fully customized after initialization.</p>
 
 <p>Key names string syntax options:
-    @<q>key1;key2;key3;&hellip;</q>
-    @<q>group1 header:(key1, key2,&hellip;):group1 footer;group2&hellip;</q></p>
+    @&ldquo;key1;key2;key3;&hellip;&rdquo;
+    @&ldquo;group1 header:(key1, key2,&hellip;):group1 footer;group2&hellip;&rdquo;</p>
 
                       </div>
                       <div class="declaration">
@@ -833,11 +836,6 @@ keys of their bound mutable dictionaries. </p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithDictionaryKeyNamesString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyNamesString</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">dictionaryKeyNamesString</span> <span class="nv">keyNamesString</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -853,7 +851,7 @@ keys of their bound mutable dictionaries. </p>
                               </td>
                               <td>
                                 <div>
-                                  <p>A string with the key names separated by semi-colons. Example string: @<q>firstName;lastName</q>. Property groups can also be defined in the string using the following format: @<q>Personal Details:(firstName, lastName); Address:(street, state, country)</q>. The group title can also be ommitted to create a group with no title. For example: @<q>:(firstName, lastName)</q>.</p>
+                                  <p>A string with the key names separated by semi-colons. Example string: @&ldquo;firstName;lastName&rdquo;. Property groups can also be defined in the string using the following format: @&ldquo;Personal Details:(firstName, lastName); Address:(street, state, country)&rdquo;. The group title can also be ommitted to create a group with no title. For example: @&ldquo;:(firstName, lastName)&rdquo;.</p>
                                 </div>
                               </td>
                             </tr>
@@ -861,7 +859,7 @@ keys of their bound mutable dictionaries. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDictionaryDefinition.h#L87">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L87">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -871,7 +869,7 @@ keys of their bound mutable dictionaries. </p>
                     <code>
                     <a name="/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNames:"></a>
                     <a name="//apple_ref/objc/Method/-initWithDictionaryKeyNames:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNames:">-initWithDictionaryKeyNames:</a>
+                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNames:">-initWithDictionaryKeyNames:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -889,11 +887,6 @@ keys of their bound mutable dictionaries. </p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithDictionaryKeyNames</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyNames</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">dictionaryKeyNames</span> <span class="nv">keyNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -917,7 +910,7 @@ keys of their bound mutable dictionaries. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDictionaryDefinition.h#L95">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -927,7 +920,7 @@ keys of their bound mutable dictionaries. </p>
                     <code>
                     <a name="/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNames:keyTitles:"></a>
                     <a name="//apple_ref/objc/Method/-initWithDictionaryKeyNames:keyTitles:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNames:keyTitles:">-initWithDictionaryKeyNames:keyTitles:</a>
+                    <a class="token" href="#/c:objc(cs)SCDictionaryDefinition(im)initWithDictionaryKeyNames:keyTitles:">-initWithDictionaryKeyNames:<wbr>keyTitles:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -946,11 +939,6 @@ keys of their bound mutable dictionaries. </p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithDictionaryKeyNames</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyNames</span>
                                  <span class="nf">keyTitles</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyTitles</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">dictionaryKeyNames</span> <span class="nv">keyNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="nv">keyTitles</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -986,7 +974,7 @@ keys of their bound mutable dictionaries. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDictionaryDefinition.h#L104">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDictionaryDefinition.h#L104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -999,8 +987,8 @@ keys of their bound mutable dictionaries. </p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

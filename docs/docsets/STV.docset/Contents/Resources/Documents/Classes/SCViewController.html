@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCViewController</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span> <span class="o">&lt;</span><span class="n">UISplitViewControllerDelegate</span><span class="p">,</span>
                                                 <span class="n">UIPopoverControllerDelegate</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="n">UITableView</span> <span class="o">*</span><span class="n">_tableView</span><span class="p">;</span>
@@ -615,6 +613,9 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L37-L163">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -647,7 +648,7 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -658,9 +659,11 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
               <div class="task-name-container">
                 <a name="/Configuration"></a>
                 <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
-                <a href="#/Configuration">
-                  <h3 class="section-name">Configuration</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><p>Configuration</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -688,17 +691,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UITableView</span> <span class="o">*</span><span class="n">tableView</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UITableView</span> <span class="o">*</span><span class="n">tableView</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L50">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L50">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -723,17 +721,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableViewModel</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tableViewModel</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n"><a href="../Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableViewModel</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L53">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L53">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -758,17 +751,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/SCNavigationBarType.html">SCNavigationBarType</a></span> <span class="n">navigationBarType</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">navigationBarType</span><span class="p">:</span> <span class="kt"><a href="../Enums/SCNavigationBarType.html">SCNavigationBarType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/SCNavigationBarType.html">SCNavigationBarType</a></span> <span class="n">navigationBarType</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L56">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L56">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -793,17 +781,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">addButton</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">addButton</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">addButton</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L59">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -828,17 +811,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">editButton</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">editButton</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">editButton</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L62">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -863,17 +841,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">cancelButton</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cancelButton</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">cancelButton</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L65">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L65">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -899,17 +872,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">allowEditingModeCancelButton</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowEditingModeCancelButton</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">allowEditingModeCancelButton</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L69">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -934,17 +902,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">doneButton</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">doneButton</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIBarButtonItem</span> <span class="o">*</span><span class="n">doneButton</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L72">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L72">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,14 +935,9 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIPopoverController</span> <span class="o">*</span><span class="n">popoverController</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">popoverController</span><span class="p">:</span> <span class="kt">UIPopoverController</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1004,17 +962,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SCViewControllerActions.html">SCViewControllerActions</a></span> <span class="o">*</span><span class="n">actions</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">actions</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewControllerActions.html">SCViewControllerActions</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/SCViewControllerActions.html">SCViewControllerActions</a></span> <span class="o">*</span><span class="n">actions</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L81">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L81">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1039,17 +992,12 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/SCViewControllerState.html">SCViewControllerState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/SCViewControllerState.html">SCViewControllerState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SCViewControllerState.html">SCViewControllerState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L84">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1060,9 +1008,11 @@ connects its doneButton (if present) to tableViewModel&rsquo;s commitButton auto
               <div class="task-name-container">
                 <a name="/Managing%20Button%20Events"></a>
                 <a name="//apple_ref/objc/Section/Managing Button Events" class="dashAnchor"></a>
-                <a href="#/Managing%20Button%20Events">
-                  <h3 class="section-name">Managing Button Events</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Managing%20Button%20Events"></a>
+                  <h3 class="section-name"><p>Managing Button Events</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1087,17 +1037,12 @@ See also SCViewControllerDelegate to get notified when the view controller is di
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">cancelButtonTapped</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cancelButtonTapped</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">cancelButtonTapped</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L95">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1124,17 +1069,12 @@ See also SCViewControllerDelegate to get notified when the view controller is di
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">doneButtonTapped</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">doneButtonTapped</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">doneButtonTapped</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L102">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1145,9 +1085,11 @@ See also SCViewControllerDelegate to get notified when the view controller is di
               <div class="task-name-container">
                 <a name="/Managing%20Contained%20View%20Controller"></a>
                 <a name="//apple_ref/objc/Section/Managing Contained View Controller" class="dashAnchor"></a>
-                <a href="#/Managing%20Contained%20View%20Controller">
-                  <h3 class="section-name">Managing Contained View Controller</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Managing%20Contained%20View%20Controller"></a>
+                  <h3 class="section-name"><p>Managing Contained View Controller</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1175,17 +1117,12 @@ See also SCViewControllerDelegate to get notified when the view controller is di
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SCTableViewController.html">SCTableViewController</a></span> <span class="o">*</span><span class="n">containedViewController</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">containedViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCTableViewController.html">SCTableViewController</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n"><a href="../Classes/SCTableViewController.html">SCTableViewController</a></span> <span class="o">*</span><span class="n">containedViewController</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L113">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1196,9 +1133,11 @@ See also SCViewControllerDelegate to get notified when the view controller is di
               <div class="task-name-container">
                 <a name="/Managing%20Delegate"></a>
                 <a name="//apple_ref/objc/Section/Managing Delegate" class="dashAnchor"></a>
-                <a href="#/Managing%20Delegate">
-                  <h3 class="section-name">Managing Delegate</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Managing%20Delegate"></a>
+                  <h3 class="section-name"><p>Managing Delegate</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1221,17 +1160,12 @@ See also SCViewControllerDelegate to get notified when the view controller is di
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">id</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L120">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L120">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1240,11 +1174,13 @@ See also SCViewControllerDelegate to get notified when the view controller is di
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Internal%20Properties%20&amp;%20Methods%20(should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing)"></a>
+                <a name="/Internal%20Properties%20%26%20Methods%20%28should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing%29"></a>
                 <a name="//apple_ref/objc/Section/Internal Properties &amp; Methods (should only be used by the framework or when subclassing)" class="dashAnchor"></a>
-                <a href="#/Internal%20Properties%20&amp;%20Methods%20(should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing)">
-                  <h3 class="section-name">Internal Properties &amp; Methods (should only be used by the framework or when subclassing)</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Internal%20Properties%20%26%20Methods%20%28should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing%29"></a>
+                  <h3 class="section-name"><p>Internal Properties &amp; Methods (should only be used by the framework or when subclassing)</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1267,17 +1203,12 @@ See also SCViewControllerDelegate to get notified when the view controller is di
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">hasFocus</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hasFocus</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">hasFocus</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L127">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L127">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1310,14 +1241,9 @@ See also SCViewControllerDelegate to get notified when the view controller is di
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">performInitialization</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">performInitialization</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L132">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1347,14 +1273,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cancelButtonAction</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancelButtonAction</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L139">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1384,14 +1305,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">doneButtonAction</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">doneButtonAction</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L146">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1419,14 +1335,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">editButtonAction</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">editButtonAction</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L149">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L149">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1454,14 +1365,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">editingModeCancelButtonAction</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">editingModeCancelButtonAction</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L152">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1471,7 +1377,7 @@ using SCViewControllerDelegate.</p>
                     <code>
                     <a name="/c:objc(cs)SCViewController(im)dismissWithCancelValue:doneValue:"></a>
                     <a name="//apple_ref/objc/Method/-dismissWithCancelValue:doneValue:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCViewController(im)dismissWithCancelValue:doneValue:">-dismissWithCancelValue:doneValue:</a>
+                    <a class="token" href="#/c:objc(cs)SCViewController(im)dismissWithCancelValue:doneValue:">-dismissWithCancelValue:<wbr>doneValue:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1489,14 +1395,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dismissWithCancelValue</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">cancelValue</span> <span class="nf">doneValue</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneValue</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="n">withCancelValue</span> <span class="nv">cancelValue</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">doneValue</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L155">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L155">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1524,14 +1425,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">gainFocus</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">gainFocus</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L158">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1559,14 +1455,9 @@ using SCViewControllerDelegate.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">loseFocus</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loseFocus</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L161">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L161">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1579,8 +1470,8 @@ using SCViewControllerDelegate.</p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

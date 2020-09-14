@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCArrayOfStringsModel</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCArrayOfStringsModel</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCArrayOfObjectsModel.html">SCArrayOfObjectsModel</a></span></code></pre>
 
                 </div>
@@ -601,6 +599,9 @@ all its funtionality from its superclass: SCArrayOfItemsModel, except that its i
 array can only contain items of type NSString. &lsquo;SCArrayOfStringsModel 
 will automatically generate a set of SCArrayOfStringsSection(s) if the sectionHeaderTitleForItem modelAction is implemented, otherwise it will only generate a single SCArrayOfStringsSection.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L810-L832">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -613,7 +614,7 @@ will automatically generate a set of SCArrayOfStringsSection(s) if the sectionHe
                     <code>
                     <a name="/c:objc(cs)SCArrayOfStringsModel(cm)modelWithTableView:items:"></a>
                     <a name="//apple_ref/objc/Method/+modelWithTableView:items:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsModel(cm)modelWithTableView:items:">+modelWithTableView:items:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsModel(cm)modelWithTableView:items:">+modelWithTableView:<wbr>items:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -667,7 +668,7 @@ move operations.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L820">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L820">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -677,7 +678,7 @@ move operations.</p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfStringsModel(im)initWithTableView:items:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:items:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsModel(im)initWithTableView:items:">-initWithTableView:items:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsModel(im)initWithTableView:items:">-initWithTableView:<wbr>items:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -694,11 +695,6 @@ move operations.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithTableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span>
                             <span class="nf">items</span><span class="p">:(</span><span class="n">NSMutableArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">items</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">NSMutableArray</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -736,7 +732,7 @@ move operations.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L830">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L830">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -749,8 +745,8 @@ move operations.</p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

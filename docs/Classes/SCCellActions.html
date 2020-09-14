@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCCellActions</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCCellActions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
@@ -602,6 +600,9 @@
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L48-L1193">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -611,9 +612,11 @@
               <div class="task-name-container">
                 <a name="/Actions"></a>
                 <a name="//apple_ref/objc/Section/Actions" class="dashAnchor"></a>
-                <a href="#/Actions">
-                  <h3 class="section-name">Actions</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Actions"></a>
+                  <h3 class="section-name"><p>Actions</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -659,17 +662,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">willStyle</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">willStyle</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">willStyle</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L76">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L76">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -712,17 +710,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">willConfigure</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">willConfigure</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">willConfigure</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L98">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L98">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -765,17 +758,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didLayoutSubviews</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didLayoutSubviews</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didLayoutSubviews</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L120">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L120">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -823,17 +811,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">willDisplay</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">willDisplay</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">willDisplay</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L144">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -876,17 +859,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">lazyLoad</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lazyLoad</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">lazyLoad</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L166">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L166">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -931,12 +909,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">willSelect</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">willSelect</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">willSelect</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -945,7 +918,7 @@
                         <p>Return FALSE to prevent selection, otherwise return TRUE.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L192">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L192">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -986,17 +959,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didSelect</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didSelect</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didSelect</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L212">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L212">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1041,12 +1009,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">willDeselect</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">willDeselect</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">willDeselect</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1055,7 +1018,7 @@
                         <p>Return FALSE to prevent deselection, otherwise return TRUE.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L238">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L238">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1096,17 +1059,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didDeselect</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didDeselect</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didDeselect</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L258">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L258">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1159,13 +1117,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCustomEditingStyleAction_Block">SCCellCustomEditingStyleAction_Block</a></span> <span class="n">customEditingStyle</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customEditingStyle</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCustomEditingStyleAction_Block">SCCellCustomEditingStyleAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCustomEditingStyleAction_Block">SCCellCustomEditingStyleAction_Block</a></span> <span class="n">customEditingStyle</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1174,7 +1126,7 @@
                         <p>Return a valid UITableViewCellEditingStyle value.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L292">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L292">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1257,12 +1209,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellEditActionsAction_Block">SCCellEditActionsAction_Block</a></span> <span class="n">editActions</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">editActions</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellEditActionsAction_Block">SCCellEditActionsAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellEditActionsAction_Block">SCCellEditActionsAction_Block</a></span> <span class="n">editActions</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1271,7 +1218,7 @@
                         <p>An array of UITableViewRowAction objects representing the actions for the cell. Each action you provide is used to create a button that the user can tap.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L353">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L353">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1292,34 +1239,36 @@
                         <p>Action gets called to provide custom swipe action buttons that appear when the user swipes the cell horizontally from it&rsquo;s leading edge. For example, in a left-to-right language environment, they are displayed on the left side of the row when the user swipes from left to right.</p>
 
 <p>Use this action when you want to provide custom edit actions for your cell. When the user swipes horizontally, the table view moves the cell content aside to reveal your actions. Tapping one of the action buttons executes the handler block stored with the action object.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>It&rsquo;s an NSArray that is returned here, not a UISwipeActionsConfiguration.</p>
 
-<p>Return nil if you want the cell to display the default set of actions. Note it&rsquo;s an NSArray that is returned here, not a UISwipeActionsConfiguration.</p>
-<div class="aside aside-warning">
+</div><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     <p>Only available in iOS 11 and later.</p>
 
 </div>
 
 <p>Example:</p>
-<pre class="highlight objective_c"><code>     <span class="n">cellActions</span><span class="p">.</span><span class="n">leadingSwipeActions</span> <span class="o">=</span> <span class="o">^</span><span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="n">SCTableViewCell</span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span> <span class="p">{</span>
-         <span class="n">UIContextualAction</span> <span class="o">*</span><span class="n">inAction</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIContextualAction</span> <span class="nf">contextualActionWithStyle</span><span class="p">:</span><span class="n">UIContextualActionStyleNormal</span> <span class="nf">title</span><span class="p">:</span><span class="s">@"In"</span> <span class="n">handler</span><span class="o">:^</span><span class="p">(</span><span class="n">UIContextualAction</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">action</span><span class="p">,</span> <span class="n">__kindof</span> <span class="n">UIView</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">sourceView</span><span class="p">,</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span> <span class="n">_Nonnull</span> <span class="n">completionHandler</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span> <span class="p">{</span>
-             <span class="c1">// code</span>
-             <span class="n">completionHandler</span><span class="p">(</span><span class="nb">YES</span><span class="p">);</span>
-         <span class="p">}];</span>
+<pre class="highlight objective_c"><code>    <span class="n">cellActions</span><span class="p">.</span><span class="n">leadingSwipeActions</span> <span class="o">=</span> <span class="o">^</span><span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="n">SCTableViewCell</span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">UIContextualAction</span> <span class="o">*</span><span class="n">inAction</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIContextualAction</span> <span class="nf">contextualActionWithStyle</span><span class="p">:</span><span class="n">UIContextualActionStyleNormal</span> <span class="nf">title</span><span class="p">:</span><span class="s">@"In"</span> <span class="n">handler</span><span class="o">:^</span><span class="p">(</span><span class="n">UIContextualAction</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">action</span><span class="p">,</span> <span class="n">__kindof</span> <span class="n">UIView</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">sourceView</span><span class="p">,</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span> <span class="n">_Nonnull</span> <span class="n">completionHandler</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span> <span class="p">{</span>
+            <span class="c1">// code</span>
+            <span class="n">completionHandler</span><span class="p">(</span><span class="nb">YES</span><span class="p">);</span>
+        <span class="p">}];</span>
 
 
-         <span class="n">UIContextualAction</span> <span class="o">*</span><span class="n">outAction</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIContextualAction</span> <span class="nf">contextualActionWithStyle</span><span class="p">:</span><span class="n">UIContextualActionStyleNormal</span> <span class="nf">title</span><span class="p">:</span><span class="s">@"Out"</span> <span class="n">handler</span><span class="o">:^</span><span class="p">(</span><span class="n">UIContextualAction</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">action</span><span class="p">,</span> <span class="n">__kindof</span> <span class="n">UIView</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">sourceView</span><span class="p">,</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span> <span class="n">_Nonnull</span> <span class="n">completionHandler</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span> <span class="p">{</span>
-             <span class="c1">// code</span>
-             <span class="n">completionHandler</span><span class="p">(</span><span class="nb">YES</span><span class="p">);</span>
-         <span class="p">}];</span>
+        <span class="n">UIContextualAction</span> <span class="o">*</span><span class="n">outAction</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIContextualAction</span> <span class="nf">contextualActionWithStyle</span><span class="p">:</span><span class="n">UIContextualActionStyleNormal</span> <span class="nf">title</span><span class="p">:</span><span class="s">@"Out"</span> <span class="n">handler</span><span class="o">:^</span><span class="p">(</span><span class="n">UIContextualAction</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">action</span><span class="p">,</span> <span class="n">__kindof</span> <span class="n">UIView</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">sourceView</span><span class="p">,</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span> <span class="n">_Nonnull</span> <span class="n">completionHandler</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span> <span class="p">{</span>
+            <span class="c1">// code</span>
+            <span class="n">completionHandler</span><span class="p">(</span><span class="nb">YES</span><span class="p">);</span>
+        <span class="p">}];</span>
 
-         <span class="n">inAction</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">systemGreenColor</span><span class="p">];</span>
-         <span class="n">outAction</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">systemYellowColor</span><span class="p">];</span>
+        <span class="n">inAction</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">systemGreenColor</span><span class="p">];</span>
+        <span class="n">outAction</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="nf">systemYellowColor</span><span class="p">];</span>
 
-         <span class="n">cell</span><span class="p">.</span><span class="n">leadingSwipePerformsFirstActionWithFullSwipe</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+        <span class="n">cell</span><span class="p">.</span><span class="n">leadingSwipePerformsFirstActionWithFullSwipe</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
 
-         <span class="k">return</span> <span class="p">@[</span><span class="n">inAction</span><span class="p">,</span> <span class="n">outAction</span><span class="p">];</span>
-     <span class="p">};</span>
+        <span class="k">return</span> <span class="p">@[</span><span class="n">inAction</span><span class="p">,</span> <span class="n">outAction</span><span class="p">];</span>
+    <span class="p">};</span>
 </code></pre>
 
                       </div>
@@ -1327,13 +1276,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellLeadingSwipeActionsAction_Block">SCCellLeadingSwipeActionsAction_Block</a></span> <span class="n">leadingSwipeActions</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">leadingSwipeActions</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellLeadingSwipeActionsAction_Block">SCCellLeadingSwipeActionsAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellLeadingSwipeActionsAction_Block">SCCellLeadingSwipeActionsAction_Block</a></span> <span class="n">leadingSwipeActions</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1342,7 +1285,7 @@
                         <p>An array of UIContextualAction objects representing the actions for the cell. Each action you provide is used to create a button that the user can tap on the leading edge of the cell.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L391">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1364,8 +1307,12 @@
 
 <p>Use this action when you want to provide custom edit actions for your cell. When the user swipes horizontally, the table view moves the cell content aside to reveal your actions. Tapping one of the action buttons executes the handler block stored with the action object.</p>
 
-<p>Return nil if you want the cell to display the default set of actions. Note it&rsquo;s an NSArray that is returned here, not a UISwipeActionsConfiguration.</p>
-<div class="aside aside-warning">
+<p>Return nil if you want the cell to display the default set of actions, although trailingSwipePerformsFirstActionWithFullSwipe will then always be the default of YES. You have to return your own Delete UIContextualAction, and set trailingSwipePerformsFirstActionWithFullSwipe to NO, if you want the Delete with no full swipe.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>It&rsquo;s an NSArray that is returned here, not a UISwipeActionsConfiguration.</p>
+
+</div><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     <p>Only available in iOS 11 and later.</p>
 
@@ -1397,13 +1344,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellTrailingSwipeActionsAction_Block">SCCellTrailingSwipeActionsAction_Block</a></span> <span class="n">trailingSwipeActions</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">trailingSwipeActions</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellTrailingSwipeActionsAction_Block">SCCellTrailingSwipeActionsAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellTrailingSwipeActionsAction_Block">SCCellTrailingSwipeActionsAction_Block</a></span> <span class="n">trailingSwipeActions</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1412,7 +1353,7 @@
                         <p>An array of UIContextualAction objects representing the actions for the cell. Each action you provide is used to create a button that the user can tap on the trailing edge of the cell.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L427">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L430">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1453,18 +1394,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didBecomeFirstResponder</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didBecomeFirstResponder</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didBecomeFirstResponder</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L453">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L456">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1505,18 +1440,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didResignFirstResponder</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didResignFirstResponder</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">didResignFirstResponder</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L473">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L476">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1562,17 +1491,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">accessoryButtonTapped</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">accessoryButtonTapped</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">accessoryButtonTapped</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L495">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L498">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1622,17 +1546,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">returnButtonTapped</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">returnButtonTapped</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">returnButtonTapped</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L521">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L524">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1675,17 +1594,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">valueChanged</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">valueChanged</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellAction_Block">SCCellAction_Block</a></span> <span class="n">valueChanged</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L543">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L546">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1750,12 +1664,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">valueIsValid</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">valueIsValid</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">valueIsValid</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -1764,7 +1673,7 @@
                         <p>Return YES if the current cell value is valid, otherwise return NO.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L589">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L592">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1819,18 +1728,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCalculatedValueAction_Block">SCCellCalculatedValueAction_Block</a></span> <span class="n">calculatedValue</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">calculatedValue</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCalculatedValueAction_Block">SCCellCalculatedValueAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCalculatedValueAction_Block">SCCellCalculatedValueAction_Block</a></span> <span class="n">calculatedValue</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L623">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L626">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1885,18 +1788,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellBoundValueAction_Block">SCCellBoundValueAction_Block</a></span> <span class="n">didLoadBoundValue</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didLoadBoundValue</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellBoundValueAction_Block">SCCellBoundValueAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellBoundValueAction_Block">SCCellBoundValueAction_Block</a></span> <span class="n">didLoadBoundValue</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L657">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L660">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1951,18 +1848,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellBoundValueAction_Block">SCCellBoundValueAction_Block</a></span> <span class="n">willCommitBoundValue</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">willCommitBoundValue</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellBoundValueAction_Block">SCCellBoundValueAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellBoundValueAction_Block">SCCellBoundValueAction_Block</a></span> <span class="n">willCommitBoundValue</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L691">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L694">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2005,18 +1896,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCustomButtonTappedAction_Block">SCCellCustomButtonTappedAction_Block</a></span> <span class="n">customButtonTapped</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customButtonTapped</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCustomButtonTappedAction_Block">SCCellCustomButtonTappedAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCustomButtonTappedAction_Block">SCCellCustomButtonTappedAction_Block</a></span> <span class="n">customButtonTapped</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L713">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L716">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2027,9 +1912,11 @@
               <div class="task-name-container">
                 <a name="/Copying%20and%20Pasting"></a>
                 <a name="//apple_ref/objc/Section/Copying and Pasting" class="dashAnchor"></a>
-                <a href="#/Copying%20and%20Pasting">
-                  <h3 class="section-name">Copying and Pasting</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Copying%20and%20Pasting"></a>
+                  <h3 class="section-name"><p>Copying and Pasting</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -2068,13 +1955,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">shouldShowMenu</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">shouldShowMenu</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCBOOLReturnCellAction_Block">SCBOOLReturnCellAction_Block</a></span> <span class="n">shouldShowMenu</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -2083,7 +1964,7 @@
                         <p>Return TRUE to show editing menu, otherwise return FALSE.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L740">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L743">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2127,13 +2008,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCanPerformAction_Block">SCCellCanPerformAction_Block</a></span> <span class="n">canPerformAction</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">canPerformAction</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCanPerformAction_Block">SCCellCanPerformAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellCanPerformAction_Block">SCCellCanPerformAction_Block</a></span> <span class="n">canPerformAction</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -2142,7 +2017,7 @@
                         <p>Return TRUE if the command corresponding to action should appear in the editing menu, otherwise return FALSE.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L765">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L768">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2186,17 +2061,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellPerformAction_Block">SCCellPerformAction_Block</a></span> <span class="n">performAction</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">performAction</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellPerformAction_Block">SCCellPerformAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellPerformAction_Block">SCCellPerformAction_Block</a></span> <span class="n">performAction</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L789">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L792">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2207,9 +2077,11 @@
               <div class="task-name-container">
                 <a name="/Detail%20Model%20Actions"></a>
                 <a name="//apple_ref/objc/Section/Detail Model Actions" class="dashAnchor"></a>
-                <a href="#/Detail%20Model%20Actions">
-                  <h3 class="section-name">Detail Model Actions</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Detail%20Model%20Actions"></a>
+                  <h3 class="section-name"><p>Detail Model Actions</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -2259,13 +2131,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellDetailViewControllerAction_Block">SCCellDetailViewControllerAction_Block</a></span> <span class="n">detailViewController</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailViewController</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellDetailViewControllerAction_Block">SCCellDetailViewControllerAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellDetailViewControllerAction_Block">SCCellDetailViewControllerAction_Block</a></span> <span class="n">detailViewController</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -2274,7 +2140,7 @@
                         <p>The custom view controller. <em>Must only be of type SCViewController or SCTableViewController</em>. Note: returning nil ignores the implementation of this action.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L825">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L828">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2338,13 +2204,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellDetailTableViewModelAction_Block">SCCellDetailTableViewModelAction_Block</a></span> <span class="n">detailTableViewModel</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailTableViewModel</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellDetailTableViewModelAction_Block">SCCellDetailTableViewModelAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCCellDetailTableViewModelAction_Block">SCCellDetailTableViewModelAction_Block</a></span> <span class="n">detailTableViewModel</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -2353,7 +2213,7 @@
                         <p>The custom detail model. The returned detail model should not be associated with any table views, as the framework will automatically handle this on your behalf. Note: returning nil ignores the implementation of this action.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L864">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L867">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2394,8 +2254,7 @@
     <p class="aside-title">Note</p>
     <p>This action is only applicable to cells that generate detail views, such as SCSelectionCell.</p>
 
-</div>
-<div class="aside aside-see">
+</div><div class="aside aside-see">
     <p class="aside-title">See</p>
     <p>detailModelConfigured</p>
 
@@ -2406,18 +2265,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelCreated</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelCreated</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelCreated</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L891">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L894">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2466,8 +2319,7 @@
     <p class="aside-title">Note</p>
     <p>In general, it is easier (and more recommended) to add your custom sections and cells using the data definitions, instead of using this action to do so. For more information, please refer to SCDataDefinition and SCCustomPropertyDefinition.</p>
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>This action is only applicable to cells that generate detail views, such as SCSelectionCell.</p>
 
@@ -2478,18 +2330,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelConfigured</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelConfigured</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelConfigured</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L926">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2537,18 +2383,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelWillPresent</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelWillPresent</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelWillPresent</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L951">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2594,18 +2434,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelDidPresent</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelDidPresent</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelDidPresent</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L974">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2651,18 +2485,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCConditionalDetailModelCellAction_Block">SCConditionalDetailModelCellAction_Block</a></span> <span class="n">detailModelShouldDismiss</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelShouldDismiss</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCConditionalDetailModelCellAction_Block">SCConditionalDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCConditionalDetailModelCellAction_Block">SCConditionalDetailModelCellAction_Block</a></span> <span class="n">detailModelShouldDismiss</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L997">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2708,18 +2536,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelWillDismiss</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelWillDismiss</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelWillDismiss</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1020">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1023">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2765,18 +2587,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelDidDismiss</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailModelDidDismiss</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCDetailModelCellAction_Block">SCDetailModelCellAction_Block</a></span> <span class="n">detailModelDidDismiss</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1043">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1046">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2787,9 +2603,11 @@
               <div class="task-name-container">
                 <a name="/Cell%20Text%20Field%20Related%20Actions"></a>
                 <a name="//apple_ref/objc/Section/Cell Text Field Related Actions" class="dashAnchor"></a>
-                <a href="#/Cell%20Text%20Field%20Related%20Actions">
-                  <h3 class="section-name">Cell Text Field Related Actions</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Cell%20Text%20Field%20Related%20Actions"></a>
+                  <h3 class="section-name"><p>Cell Text Field Related Actions</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -2832,19 +2650,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCTextFieldShouldChangeCharactersInRangeAction_Block">SCTextFieldShouldChangeCharactersInRangeAction_Block</a></span>
-        <span class="n">shouldChangeCharactersInRange</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">shouldChangeCharactersInRange</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCTextFieldShouldChangeCharactersInRangeAction_Block">SCTextFieldShouldChangeCharactersInRangeAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCTextFieldShouldChangeCharactersInRangeAction_Block">SCTextFieldShouldChangeCharactersInRangeAction_Block</a></span> <span class="n">shouldChangeCharactersInRange</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1075">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1078">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2855,9 +2666,11 @@
               <div class="task-name-container">
                 <a name="/SCImagePickerCell%20Specific%20Actions"></a>
                 <a name="//apple_ref/objc/Section/SCImagePickerCell Specific Actions" class="dashAnchor"></a>
-                <a href="#/SCImagePickerCell%20Specific%20Actions">
-                  <h3 class="section-name">SCImagePickerCell Specific Actions</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/SCImagePickerCell%20Specific%20Actions"></a>
+                  <h3 class="section-name"><p>SCImagePickerCell Specific Actions</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -2900,18 +2713,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerDidFinishPickingMediaAction_Block">SCImagePickerDidFinishPickingMediaAction_Block</a></span> <span class="n">didFinishPickingMedia</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">didFinishPickingMedia</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerDidFinishPickingMediaAction_Block">SCImagePickerDidFinishPickingMediaAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerDidFinishPickingMediaAction_Block">SCImagePickerDidFinishPickingMediaAction_Block</a></span> <span class="n">didFinishPickingMedia</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1112">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2952,18 +2759,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerImageNameAction_Block">SCImagePickerImageNameAction_Block</a></span> <span class="n">imageName</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">imageName</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerImageNameAction_Block">SCImagePickerImageNameAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerImageNameAction_Block">SCImagePickerImageNameAction_Block</a></span> <span class="n">imageName</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1133">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1136">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3004,18 +2805,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerSaveImageAction_Block">SCImagePickerSaveImageAction_Block</a></span> <span class="n">saveImage</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">saveImage</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerSaveImageAction_Block">SCImagePickerSaveImageAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerSaveImageAction_Block">SCImagePickerSaveImageAction_Block</a></span> <span class="n">saveImage</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1154">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1157">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3056,18 +2851,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
-    <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerLoadImageAction_Block">SCImagePickerLoadImageAction_Block</a></span> <span class="n">loadImage</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">loadImage</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerLoadImageAction_Block">SCImagePickerLoadImageAction_Block</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:SCCellActions.h@T@SCImagePickerLoadImageAction_Block">SCImagePickerLoadImageAction_Block</a></span> <span class="n">loadImage</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1175">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1178">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3078,9 +2867,11 @@
               <div class="task-name-container">
                 <a name="/Miscellaneous"></a>
                 <a name="//apple_ref/objc/Section/Miscellaneous" class="dashAnchor"></a>
-                <a href="#/Miscellaneous">
-                  <h3 class="section-name">Miscellaneous</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Miscellaneous"></a>
+                  <h3 class="section-name"><p>Miscellaneous</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -3088,7 +2879,7 @@
                     <code>
                     <a name="/c:objc(cs)SCCellActions(im)setActionsTo:overrideExisting:"></a>
                     <a name="//apple_ref/objc/Method/-setActionsTo:overrideExisting:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCellActions(im)setActionsTo:overrideExisting:">-setActionsTo:overrideExisting:</a>
+                    <a class="token" href="#/c:objc(cs)SCCellActions(im)setActionsTo:overrideExisting:">-setActionsTo:<wbr>overrideExisting:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3104,11 +2895,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setActionsTo</span><span class="p">:(</span><span class="n">SCCellActions</span> <span class="o">*</span><span class="p">)</span><span class="nv">actions</span> <span class="nf">overrideExisting</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">override</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setActionsTo</span><span class="p">(</span><span class="n">_</span> <span class="nv">actions</span><span class="p">:</span> <span class="kt">SCCellActions</span><span class="o">!</span><span class="p">,</span> <span class="n">overrideExisting</span> <span class="nv">override</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3144,7 +2930,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1188">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3157,8 +2943,8 @@
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

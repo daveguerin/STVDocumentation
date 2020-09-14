@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,7 +582,7 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>Type Definitions</h1>
             <p>The following type definitions are available globally.</p>
 
@@ -619,14 +616,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -654,14 +646,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCBOOLReturnCellAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCBOOLReturnCellAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -689,14 +676,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">UITableViewCellEditingStyle</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellCustomEditingStyleAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellCustomEditingStyleAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span><span class="o">.</span><span class="kt">EditingStyle</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -724,14 +706,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellEditActionsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellEditActionsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -759,14 +736,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellLeadingSwipeActionsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellLeadingSwipeActionsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -794,14 +766,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellTrailingSwipeActionsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellTrailingSwipeActionsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -829,14 +796,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSObject</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellCalculatedValueAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellCalculatedValueAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">NSObject</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -864,14 +826,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSObject</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellBoundValueAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">value</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellBoundValueAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">NSObject</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -899,14 +856,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellCustomButtonTappedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">UIButton</span> <span class="o">*</span><span class="n">button</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellCustomButtonTappedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">UIButton</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -934,14 +886,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellCanPerformAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">action</span><span class="p">,</span> <span class="n">id</span> <span class="n">sender</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellCanPerformAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">Selector</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -969,14 +916,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellPerformAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">action</span><span class="p">,</span> <span class="n">id</span> <span class="n">sender</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellPerformAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">Selector</span><span class="p">?,</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1004,14 +946,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">UIViewController</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellDetailViewControllerAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellDetailViewControllerAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1039,14 +976,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellDetailTableViewModelAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellDetailTableViewModelAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1074,14 +1006,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDetailModelCellAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">detailModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDetailModelCellAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,14 +1036,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCConditionalDetailModelCellAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">detailModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCConditionalDetailModelCellAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1147,14 +1069,9 @@
     <span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">,</span> <span class="n">UITextField</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSRange</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCTextFieldShouldChangeCharactersInRangeAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">UITextField</span><span class="p">?,</span> <span class="kt">NSRange</span><span class="p">,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L1050">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L1053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1182,14 +1099,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCImagePickerDidFinishPickingMediaAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span> <span class="o">*</span><span class="n">imagePickerCell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">mediaInfo</span><span class="p">,</span> <span class="n">ALAsset</span> <span class="o">*</span><span class="n">mediaAsset</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCImagePickerDidFinishPickingMediaAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="kt">ALAsset</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1217,14 +1129,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSString</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCImagePickerImageNameAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span> <span class="o">*</span><span class="n">imagePickerCell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCImagePickerImageNameAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1252,14 +1159,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCImagePickerSaveImageAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span> <span class="o">*</span><span class="n">imagePickerCell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">imagePath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCImagePickerSaveImageAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1287,22 +1189,13 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">UIImage</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCImagePickerLoadImageAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span> <span class="o">*</span><span class="n">imagePickerCell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">imagePath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCImagePickerLoadImageAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCImagePickerCell.html">SCImagePickerCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCCellActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCCellActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -1326,14 +1219,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDataStoreFetchSuccess_Block</span><span class="p">)(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">results</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDataStoreFetchSuccess_Block</span> <span class="o">=</span> <span class="p">([</span><span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1361,14 +1249,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDataStoreInsertSuccess_Block</span><span class="p">)(</span><span class="kt">void</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDataStoreInsertSuccess_Block</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1396,14 +1279,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDataStoreUpdateSuccess_Block</span><span class="p">)(</span><span class="kt">void</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDataStoreUpdateSuccess_Block</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1431,14 +1309,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDataStoreDeleteSuccess_Block</span><span class="p">)(</span><span class="kt">void</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDataStoreDeleteSuccess_Block</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1466,14 +1339,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDataStoreFailure_Block</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDataStoreFailure_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1501,14 +1369,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCNoConnection_Block</span><span class="p">)(</span><span class="kt">void</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCNoConnection_Block</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1536,14 +1399,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCPostFetchAsyncronousCompletionHandler_Block</span><span class="p">)(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">results</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCPostFetchAsyncronousCompletionHandler_Block</span> <span class="o">=</span> <span class="p">([</span><span class="kt">Any</span><span class="p">]?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1571,22 +1429,13 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCPostFetchAsyncronousAction_Block</span><span class="p">)(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">results</span><span class="p">,</span> <span class="n"><a href="Type%20Definitions.html#/c:SCDataStore.h@T@SCPostFetchAsyncronousCompletionHandler_Block">SCPostFetchAsyncronousCompletionHandler_Block</a></span> <span class="n">completionHandler</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCPostFetchAsyncronousAction_Block</span> <span class="o">=</span> <span class="p">([</span><span class="kt">Any</span><span class="p">]?,</span> <span class="kt"><a href="Type%20Definitions.html#/c:SCDataStore.h@T@SCPostFetchAsyncronousCompletionHandler_Block">SCPostFetchAsyncronousCompletionHandler_Block</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCDataStore.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCDataStore.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -1610,14 +1459,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCModelAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCModelAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1645,14 +1489,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCConditionalModelAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCConditionalModelAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1680,14 +1519,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidAddSectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">sectionIndex</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidAddSectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt">UInt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1715,14 +1549,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidRemoveSectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">sectionIndex</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidRemoveSectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt">UInt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1750,14 +1579,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSortSectionsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">,</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">sections</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSortSectionsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt">NSMutableArray</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1785,14 +1609,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSInteger</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionForSectionIndexTitleAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">title</span><span class="p">,</span> <span class="n">NSInteger</span> <span class="n">index</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionForSectionIndexTitleAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt">String</span><span class="p">?,</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1820,14 +1639,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidFetchModelItemsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span> <span class="o">*</span><span class="n">itemsModel</span><span class="p">,</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">items</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidFetchModelItemsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span><span class="p">?,</span> <span class="kt">NSMutableArray</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1855,14 +1669,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSString</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionHeaderTitleForItemAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span> <span class="o">*</span><span class="n">itemsModel</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">itemIndex</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionHeaderTitleForItemAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">UInt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1890,14 +1699,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionHeaderTitlesAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span> <span class="o">*</span><span class="n">itemsModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionHeaderTitlesAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1925,14 +1729,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSArray</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidComputeSearchResultsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span> <span class="o">*</span><span class="n">itemsModel</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">searchText</span><span class="p">,</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">searchResults</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidComputeSearchResultsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span><span class="p">?,</span> <span class="kt">String</span><span class="p">?,</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1960,22 +1759,13 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidMoveCellAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">tableModel</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span> <span class="o">*</span><span class="n">cell</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">fromIndexPath</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">toIndexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidMoveCellAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewCell.html">SCTableViewCell</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCModelActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCModelActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -1999,14 +1789,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">sectionIndex</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt">UInt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2034,14 +1819,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionViewAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">sectionIndex</span><span class="p">,</span> <span class="n">UIView</span> <span class="o">*</span><span class="n">view</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionViewAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt">UInt</span><span class="p">,</span> <span class="kt">UIView</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2069,14 +1849,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDetailModelSectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">detailModel</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDetailModelSectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2104,14 +1879,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCConditionalDetailModelSectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">detailModel</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCConditionalDetailModelSectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2139,14 +1909,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidFetchSectionItemsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">items</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidFetchSectionItemsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSMutableArray</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2174,14 +1939,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCFetchSectionItemsFailedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCFetchSectionItemsFailedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2209,14 +1969,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemDidCreateAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemDidCreateAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2244,14 +1999,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemWillInsertAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">itemModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemWillInsertAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2279,14 +2029,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemInsertNoConnectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemInsertNoConnectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2314,14 +2059,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemInsertFailedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemInsertFailedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2349,14 +2089,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemDidInsertAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemDidInsertAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2384,14 +2119,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemWillUpdateAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">,</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span> <span class="o">*</span><span class="n">itemModel</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemWillUpdateAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?,</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2419,14 +2149,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemUpdateNoConnectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemUpdateNoConnectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2454,14 +2179,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemUpdateFailedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemUpdateFailedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2489,14 +2209,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemDidUpdateAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemDidUpdateAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2524,14 +2239,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemWillDeleteAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemWillDeleteAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2559,14 +2269,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemDeleteNoConnectionAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemDeleteNoConnectionAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2594,14 +2299,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemDeleteFailedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">item</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemDeleteFailedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSObject</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2629,14 +2329,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCSectionItemDidDeleteAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCSectionItemDidDeleteAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2664,14 +2359,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCDidAddSpecialCellsAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">items</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDidAddSpecialCellsAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">NSMutableArray</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2699,14 +2389,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">UIViewController</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCDetailViewControllerForRowAtIndexPathAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDetailViewControllerForRowAtIndexPathAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2734,14 +2419,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCDetailTableViewModelForRowAtIndexPathAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span> <span class="o">*</span><span class="n">section</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCDetailTableViewModelForRowAtIndexPathAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewSection.html">SCTableViewSection</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2769,14 +2449,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n"><a href="Classes/SCCustomCell.html">SCCustomCell</a></span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCCellForRowAtIndexPathAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCellForRowAtIndexPathAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Classes/SCCustomCell.html">SCCustomCell</a></span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2804,14 +2479,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">NSString</span><span class="o">*</span><span class="p">(</span><span class="o">^</span><span class="n">SCReuseIdForRowAtIndexPathAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCReuseIdForRowAtIndexPathAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2839,22 +2509,13 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">CGFloat</span><span class="p">(</span><span class="o">^</span><span class="n">SCCustomHeightForRowAtIndexPathAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span> <span class="o">*</span><span class="n">itemsSection</span><span class="p">,</span> <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCCustomHeightForRowAtIndexPathAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCArrayOfItemsSection.html">SCArrayOfItemsSection</a></span><span class="p">?,</span> <span class="kt">IndexPath</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCSectionActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCSectionActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -2878,14 +2539,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCTableViewControllerAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewController.html">SCTableViewController</a></span> <span class="o">*</span><span class="n">viewController</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCTableViewControllerAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewController.html">SCTableViewController</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewControllerActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewControllerActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2913,22 +2569,13 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCTableViewControllerButtonTappedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCTableViewController.html">SCTableViewController</a></span> <span class="o">*</span><span class="n">viewController</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCTableViewControllerButtonTappedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCTableViewController.html">SCTableViewController</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewControllerActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewControllerActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -2952,14 +2599,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">SCViewControllerAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="n">viewController</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCViewControllerAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCViewController.html">SCViewController</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewControllerActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewControllerActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2987,14 +2629,9 @@
                           <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="n">BOOL</span><span class="p">(</span><span class="o">^</span><span class="n">SCViewControllerButtonTappedAction_Block</span><span class="p">)(</span><span class="n"><a href="Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="n">viewController</span><span class="p">)</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">SCViewControllerButtonTappedAction_Block</span> <span class="o">=</span> <span class="p">(</span><span class="kt"><a href="Classes/SCViewController.html">SCViewController</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewControllerActions.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewControllerActions.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -3007,8 +2644,8 @@
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

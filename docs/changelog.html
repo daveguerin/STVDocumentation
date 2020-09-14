@@ -20,7 +20,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -39,7 +39,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -166,9 +166,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -584,9 +581,21 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             
             <h1 id='stv-changelog' class='heading'>STV CHANGELOG</h1>
+<h2 id='stv-6-0-3' class='heading'>STV 6.0.3</h2>
+
+<ul>
+<li>Reconfigured the SwithPM somewhat so that all the H and M files are now back together where they should be, and together in Sources not Sources/STV.</li>
+<li>The main Git branch is now named <code>main</code>.</li>
+</ul>
+<h2 id='stv-6-0-2' class='heading'>STV 6.0.2</h2>
+
+<ul>
+<li>uiElementNibName can now use NIBs from a SwiftPM using the naming format of <code>PACKAGE_TARGET_NIBName</code>, and still not using including the <code>xib</code> extension.</li>
+<li>In iOS 14 a nil background colour was displaying as black, so all UILabel backgroundColor are now clearColor.</li>
+</ul>
 <h2 id='stv-6-0-1' class='heading'>STV 6.0.1</h2>
 
 <ul>
@@ -601,13 +610,13 @@
 <ul>
 <li>No longer a framework, now a Swift Package.</li>
 <li>Added Ozies fix for disappearing cells in iOS 11 <a href="http://sensiblecocoa.com/community/topic/2535-stv-ios-11-issues/#entry13604">http://sensiblecocoa.com/community/topic/2535-stv-ios-11-issues/#entry13604</a>. Thanks Ozie!</li>
-<li>Added lots of <code>self-&gt;</code> to avoid an Xcode warning: <q>_Block implicitly retains &lsquo;self&rsquo;; explicitly mention &lsquo;self&rsquo; to indicate this is intended behaviour_</q>.</li>
+<li>Added lots of <code>self-&gt;</code> to avoid an Xcode warning: &ldquo;<em>Block implicitly retains &lsquo;self&rsquo;; explicitly mention &lsquo;self&rsquo; to indicate this is intended behaviour</em>&rdquo;.</li>
 <li>Remarked out the <code>-splitViewController:shouldHideViewController:inOrientation:</code> method as it&rsquo;s now deprecated.</li>
-<li>The <code>-live</code> method of <code><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></code> was causing an assert in iOS 13: <q>_Attempted to access the table view&rsquo;s visibleCells while they were in the process of being updated, which is not allowed_</q>. So STV is no longer trying to count the visibleCells there, which might make it slightly less efficient, but there&rsquo;s no assert!</li>
-<li>The <code>-cellAtIndexPath:</code> method of <code><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></code> was also causing an assert in iOS 13: <q>_Attempted to call -cellForRowAtIndexPath: on the table view while it was in the process of updating its visible cells, which is not allowed_</q>. This was introduced by the change in <code>-live</code>. So STV is no longer calling <code>-cellForRowAtIndexPath</code> here, which again is going to make it less efficient, but now there&rsquo;s no assert.</li>
-<li>The <code>-tableView:shouldIndentWhileEditingRowAtIndexPath:</code> method of  <code><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></code> was also causing an assert in iOS 13: <q>_Attempted to call -cellForRowAtIndexPath: on the table view while it was in the process of updating its visible cells, which is not allowed._</q> A bit of a kludge, but the method now just returns the default value, YES, here.</li>
+<li>The <code>-live</code> method of <code><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></code> was causing an assert in iOS 13: &ldquo;<em>Attempted to access the table view&rsquo;s visibleCells while they were in the process of being updated, which is not allowed</em>&rdquo;. So STV is no longer trying to count the visibleCells there, which might make it slightly less efficient, but there&rsquo;s no assert!</li>
+<li>The <code>-cellAtIndexPath:</code> method of <code><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></code> was also causing an assert in iOS 13: &ldquo;<em>Attempted to call -cellForRowAtIndexPath: on the table view while it was in the process of updating its visible cells, which is not allowed</em>&rdquo;. This was introduced by the change in <code>-live</code>. So STV is no longer calling <code>-cellForRowAtIndexPath</code> here, which again is going to make it less efficient, but now there&rsquo;s no assert.</li>
+<li>The <code>-tableView:shouldIndentWhileEditingRowAtIndexPath:</code> method of  <code><a href="Classes/SCTableViewModel.html">SCTableViewModel</a></code> was also causing an assert in iOS 13: &ldquo;<em>Attempted to call -cellForRowAtIndexPath: on the table view while it was in the process of updating its visible cells, which is not allowed.</em>&rdquo; A bit of a kludge, but the method now just returns the default value, YES, here.</li>
 <li>Remarked out a deprecated method <code>-splitViewController:shouldHideViewController:inOrientation:</code> in both <code><a href="Classes/SCViewController.html">SCViewController</a></code> and <code><a href="Classes/SCTableViewController.html">SCTableViewController</a></code>.</li>
-<li>Fixed lots of <q>_This block declaration is not a prototype_</q> warnings from Xcode 11 with the suggested fix of adding <code>void</code>.</li>
+<li>Fixed lots of &ldquo;<em>This block declaration is not a prototype</em>&rdquo; warnings from Xcode 11 with the suggested fix of adding <code>void</code>.</li>
 <li>Removed all the Interface Builder/Storyboard stuff, sorry Tarek.</li>
 <li>Removed the examples.</li>
 <li>Removed the framework build scripts as they are no longer required.</li>
@@ -620,11 +629,14 @@
 <li>Now using iOS 13 labelColor with a fallback for earlier iOS.</li>
 <li>Now using UIFontTextStyleBody as the main font.</li>
 <li>Added two new cellActions: leadingSwipeActions and trailingSwipeActions. iOS 11 and up only.</li>
-<li>All UIPopoverController are now clang diagnostic ignored <q>-Wdeprecated-declarations</q></li>
+<li>All UIPopoverController are now clang diagnostic ignored &ldquo;-Wdeprecated-declarations&rdquo;</li>
 </ul>
 <h2 id='version-history' class='heading'>VERSION HISTORY</h2>
 
 <ul>
+<li>STV 6.0.3 Sep 14 2020</li>
+<li>STV 6.0.2 Sep 14 2020</li>
+<li>STV 6.0.1 Nov 19 2019</li>
 <li>STV 6.0.0 Nov 12 2019 - First <a href="https://github.com/daveguerin/STV">open source Swift Package release</a> by <a href="http://dgapps.ie/">dgApps</a>.<br></li>
 <li>STV 5.4.0 Apr 12 2018 - First <a href="https://github.com/wizgod/STV">open source release</a> by <a href="https://github.com/wizgod">wizgod</a> with <a href="http://sensiblecocoa.com/community/topic/2534-stv-on-github/#entry13576">permission of Sensible Cocoa/Tarek Sakr</a>.<br></li>
 <li>STV 5.4.0 Oct 15 2016 - Last closed source release from Sensible Cocoa.<br></li>
@@ -640,8 +652,8 @@
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

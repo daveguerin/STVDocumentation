@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCPullToRefreshView</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCPullToRefreshView</span> <span class="p">:</span> <span class="nc">UIView</span> <span class="p">{</span>
   <span class="n">UIScrollView</span> <span class="o">*</span><span class="n">_boundScrollView</span><span class="p">;</span>
   <span class="n">id</span> <span class="n">_target</span><span class="p">;</span>
@@ -605,12 +603,15 @@
 
 <p>Sample use:
    self.tableViewModel.enablePullToRefresh = TRUE;
-   self.tableViewModel.pullToRefreshView.pullStateText = @<q>Pull to refresh tasks</q>;
-   self.tableViewModel.pullToRefreshView.releaseStateText = @<q>Release to refresh tasks</q>;
-   self.tableViewModel.pullToRefreshView.loadingStateText = @<q>Loading new tasks&hellip;</q>;</p>
+   self.tableViewModel.pullToRefreshView.pullStateText = @&ldquo;Pull to refresh tasks&rdquo;;
+   self.tableViewModel.pullToRefreshView.releaseStateText = @&ldquo;Release to refresh tasks&rdquo;;
+   self.tableViewModel.pullToRefreshView.loadingStateText = @&ldquo;Loading new tasks&hellip;&rdquo;;</p>
 
 <p>See also: SCTableViewModel</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L39-L95">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -647,7 +648,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -681,7 +682,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -711,7 +712,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -722,9 +723,11 @@
               <div class="task-name-container">
                 <a name="/Configuration"></a>
                 <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
-                <a href="#/Configuration">
-                  <h3 class="section-name">Configuration</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><p>Configuration</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -747,17 +750,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">stateLabel</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">stateLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">stateLabel</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L51">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -782,17 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">detailTextLabel</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detailTextLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">detailTextLabel</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L54">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L54">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -817,17 +810,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIActivityIndicatorView</span> <span class="o">*</span><span class="n">activityIndicator</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">activityIndicator</span><span class="p">:</span> <span class="kt">UIActivityIndicatorView</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIActivityIndicatorView</span> <span class="o">*</span><span class="n">activityIndicator</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L57">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L57">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -852,17 +840,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">pullStateText</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">pullStateText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">pullStateText</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L60">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L60">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -887,17 +870,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">releaseStateText</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">releaseStateText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">releaseStateText</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L63">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -922,17 +900,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">loadingStateText</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">loadingStateText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">loadingStateText</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L66">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -957,17 +930,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIImageView</span> <span class="o">*</span><span class="n">arrowImageView</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">arrowImageView</span><span class="p">:</span> <span class="kt">UIImageView</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIImageView</span> <span class="o">*</span><span class="n">arrowImageView</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L69">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -976,11 +944,13 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Internal%20Properties%20&amp;%20Methods%20(should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing)"></a>
+                <a name="/Internal%20Properties%20%26%20Methods%20%28should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing%29"></a>
                 <a name="//apple_ref/objc/Section/Internal Properties &amp; Methods (should only be used by the framework or when subclassing)" class="dashAnchor"></a>
-                <a href="#/Internal%20Properties%20&amp;%20Methods%20(should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing)">
-                  <h3 class="section-name">Internal Properties &amp; Methods (should only be used by the framework or when subclassing)</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Internal%20Properties%20%26%20Methods%20%28should%20only%20be%20used%20by%20the%20framework%20or%20when%20subclassing%29"></a>
+                  <h3 class="section-name"><p>Internal Properties &amp; Methods (should only be used by the framework or when subclassing)</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1003,17 +973,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/SCPullToRefreshViewState.html">SCPullToRefreshViewState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/SCPullToRefreshViewState.html">SCPullToRefreshViewState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/SCPullToRefreshViewState.html">SCPullToRefreshViewState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L77">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L77">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1023,7 +988,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPullToRefreshView(im)bindToScrollView:"></a>
                     <a name="//apple_ref/objc/Method/-bindToScrollView:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPullToRefreshView(im)bindToScrollView:">-bindToScrollView:</a>
+                    <a class="token" href="#/c:objc(cs)SCPullToRefreshView(im)bindToScrollView:">-bindToScrollView:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1041,14 +1006,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bindToScrollView</span><span class="p">:(</span><span class="n">UIScrollView</span> <span class="o">*</span><span class="p">)</span><span class="nv">scrollView</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bind</span><span class="p">(</span><span class="n">toScroll</span> <span class="nv">scrollView</span><span class="p">:</span> <span class="kt">UIScrollView</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L80">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1058,7 +1018,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPullToRefreshView(im)setTarget:forStartLoadingAction:"></a>
                     <a name="//apple_ref/objc/Method/-setTarget:forStartLoadingAction:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPullToRefreshView(im)setTarget:forStartLoadingAction:">-setTarget:forStartLoadingAction:</a>
+                    <a class="token" href="#/c:objc(cs)SCPullToRefreshView(im)setTarget:forStartLoadingAction:">-setTarget:<wbr>forStartLoadingAction:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1076,14 +1036,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setTarget</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">target</span> <span class="nf">forStartLoadingAction</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">action</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">forStartLoadingAction</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Selector</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L83">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L83">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1111,14 +1066,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">boundScrollViewDidScroll</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">boundScrollDidScroll</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L86">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L86">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1146,14 +1096,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">boundScrollViewDidEndDragging</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">boundScrollDidEndDragging</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L89">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1181,14 +1126,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">boundScrollViewDidFinishLoading</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">boundScrollDidFinishLoading</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPullToRefreshView.h#L92">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPullToRefreshView.h#L92">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1201,8 +1141,8 @@
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCTheme</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCTheme</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
@@ -603,7 +601,7 @@
 
 <p>NSString*   -&gt;       A string between single or double quotes.
 Example:
-   detailTextLabel.text: <q>Hello World!</q>;</p>
+   detailTextLabel.text: &ldquo;Hello World!&rdquo;;</p>
 
 <p>CGFloat     -&gt;       A normal number.
 Example:
@@ -624,7 +622,7 @@ Example:
    backgroundColor: #CC33FF
 or                   A string containing an image resource.
 Example:
-   backgroundColor: <q>background.png</q>;</p>
+   backgroundColor: &ldquo;background.png&rdquo;;</p>
 
 <p>CGColorRef  -&gt;       Format identical to UIColor.
 Example:
@@ -641,10 +639,10 @@ Example:
 
 <p>UIImage*    -&gt;       A string containing the image resource.
 Example:
-   backgroundImage: <q>background.png</q>
+   backgroundImage: &ldquo;background.png&rdquo;
 or                   A string containing the image resource and capInsets(top, left, bottom, right).
 Example:
-   backgroundImage: <q>background.png</q> capInsets(0,0,0,0)</p>
+   backgroundImage: &ldquo;background.png&rdquo; capInsets(0,0,0,0)</p>
 
 <p>UIFont*     -&gt;       Font name and size separated by a space. A good resource for font names is: <a href="http://iosfonts.com/">http://iosfonts.com/</a>
 Example:
@@ -652,7 +650,7 @@ Example:
 
 <p>UIView*     -&gt;       A string containing an image resource that will be loaded into a UIImageView.
 Example:
-   backgroundView: <q>background.png</q>;</p>
+   backgroundView: &ldquo;background.png&rdquo;;</p>
 
 <p>UITableViewCellSeparatorStyle      Any valid UITableViewCellSeparatorStyle constant.
 Example: 
@@ -661,12 +659,12 @@ Example:
 <p>Sample theme file: MyTheme.sct
    UINavigationBar
    {
-       backgroundImage: <q>navbar-background.png</q>;
+       backgroundImage: &ldquo;navbar-background.png&rdquo;;
    }</p>
 
 <p>UITableView
    {
-       backgroundView: <q>leather-background.png</q>;
+       backgroundView: &ldquo;leather-background.png&rdquo;;
    }</p>
 
 <p>SCTableViewSection
@@ -679,31 +677,34 @@ Example:
 
 <p>firstCell
    {
-       backgroundView: <q>firstCell-background.png</q>;
-       selectedBackgroundView: <q>selectedFirstCell-background.png</q>;
+       backgroundView: &ldquo;firstCell-background.png&rdquo;;
+       selectedBackgroundView: &ldquo;selectedFirstCell-background.png&rdquo;;
    }</p>
 
 <p>oddCell
    {
-       backgroundView: <q>oddCell-background.png</q>;
-       selectedBackgroundView: <q>selectedOddCell-background.png</q>;
+       backgroundView: &ldquo;oddCell-background.png&rdquo;;
+       selectedBackgroundView: &ldquo;selectedOddCell-background.png&rdquo;;
    }</p>
 
 <p>evenCell
    {
-       backgroundView: <q>evenCell-background.png</q>;
-       selectedBackgroundView: <q>selectedEvenCell-background.png</q>;
+       backgroundView: &ldquo;evenCell-background.png&rdquo;;
+       selectedBackgroundView: &ldquo;selectedEvenCell-background.png&rdquo;;
    }</p>
 
 <p>lastCell
    {
-       backgroundView: <q>lastCell-background.png</q>;
-       selectedBackgroundView: <q>selectedLastCell-background.png</q>;
+       backgroundView: &ldquo;lastCell-background.png&rdquo;;
+       selectedBackgroundView: &ldquo;selectedLastCell-background.png&rdquo;;
    }</p>
 
 <p>Sample code needed to use the above theme file:
-   self.tableViewModel.theme = [SCTheme themeWithPath:@<q>MyTheme.sct</q>];</p>
+   self.tableViewModel.theme = [SCTheme themeWithPath:@&ldquo;MyTheme.sct&rdquo;];</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTheme.h#L127-L153">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -713,9 +714,11 @@ Example:
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -723,7 +726,7 @@ Example:
                     <code>
                     <a name="/c:objc(cs)SCTheme(cm)themeWithPath:"></a>
                     <a name="//apple_ref/objc/Method/+themeWithPath:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCTheme(cm)themeWithPath:">+themeWithPath:</a>
+                    <a class="token" href="#/c:objc(cs)SCTheme(cm)themeWithPath:">+themeWithPath:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -743,7 +746,7 @@ Example:
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTheme.h#L134">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTheme.h#L134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -753,7 +756,7 @@ Example:
                     <code>
                     <a name="/c:objc(cs)SCTheme(im)initWithPath:"></a>
                     <a name="//apple_ref/objc/Method/-initWithPath:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCTheme(im)initWithPath:">-initWithPath:</a>
+                    <a class="token" href="#/c:objc(cs)SCTheme(im)initWithPath:">-initWithPath:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -771,14 +774,9 @@ Example:
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPath</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">path</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTheme.h#L137">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTheme.h#L137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -789,9 +787,11 @@ Example:
               <div class="task-name-container">
                 <a name="/Custom%20Styling"></a>
                 <a name="//apple_ref/objc/Section/Custom Styling" class="dashAnchor"></a>
-                <a href="#/Custom%20Styling">
-                  <h3 class="section-name">Custom Styling</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Custom%20Styling"></a>
+                  <h3 class="section-name"><p>Custom Styling</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -799,7 +799,7 @@ Example:
                     <code>
                     <a name="/c:objc(cs)SCTheme(im)styleObject:usingThemeStyle:"></a>
                     <a name="//apple_ref/objc/Method/-styleObject:usingThemeStyle:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCTheme(im)styleObject:usingThemeStyle:">-styleObject:usingThemeStyle:</a>
+                    <a class="token" href="#/c:objc(cs)SCTheme(im)styleObject:usingThemeStyle:">-styleObject:<wbr>usingThemeStyle:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -817,14 +817,9 @@ Example:
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">styleObject</span><span class="p">:(</span><span class="n">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nv">object</span> <span class="nf">usingThemeStyle</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">style</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">styleObject</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span><span class="p">,</span> <span class="n">usingThemeStyle</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTheme.h#L145">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTheme.h#L145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -834,7 +829,7 @@ Example:
                     <code>
                     <a name="/c:objc(cs)SCTheme(im)styleObject:usingThemeStyle:onlyStylePropertyNamesInSet:"></a>
                     <a name="//apple_ref/objc/Method/-styleObject:usingThemeStyle:onlyStylePropertyNamesInSet:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCTheme(im)styleObject:usingThemeStyle:onlyStylePropertyNamesInSet:">-styleObject:usingThemeStyle:onlyStylePropertyNamesInSet:</a>
+                    <a class="token" href="#/c:objc(cs)SCTheme(im)styleObject:usingThemeStyle:onlyStylePropertyNamesInSet:">-styleObject:<wbr>usingThemeStyle:<wbr>onlyStylePropertyNamesInSet:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -859,14 +854,9 @@ Example:
     <span class="nf">onlyStylePropertyNamesInSet</span><span class="p">:(</span><span class="n">NSSet</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyNames</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">styleObject</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span><span class="p">,</span> <span class="n">usingThemeStyle</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">onlyStylePropertyNamesIn</span> <span class="nv">propertyNames</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTheme.h#L151">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTheme.h#L151">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -879,8 +869,8 @@ Example:
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

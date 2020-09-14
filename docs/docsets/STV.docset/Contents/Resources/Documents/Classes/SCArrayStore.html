@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCArrayStore</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCArrayStore</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCDataStore.html">SCDataStore</a></span></code></pre>
 
                 </div>
@@ -600,13 +598,15 @@
     <p class="aside-title">Note</p>
     <p>It is very rare when you&rsquo;ll need to create an SCArrayStore instance yourself, as it&rsquo;s typically automatically created for you when you use data definitions such as SCClassDefinition and SCDictionaryDefinition. For example, when you use the SCArrayOfObjectsSection initializer method called [SCArrayOfObjectsSection sectionWithHeaderTitle:items:itemsDefinition:], SCArrayOfObjectsSection automatically sets its dataStore property by calling your itemsDefinition&rsquo;s [SCDataDefinition generateCompatibleDataStore:] method.</p>
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     <p>For more information on data stores, check out the SCDataStore base class documentation.</p>
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayStore.h#L23-L39">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -616,9 +616,11 @@
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -626,7 +628,7 @@
                     <code>
                     <a name="/c:objc(cs)SCArrayStore(cm)storeWithObjectsArray:defaultDefiniton:"></a>
                     <a name="//apple_ref/objc/Method/+storeWithObjectsArray:defaultDefiniton:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayStore(cm)storeWithObjectsArray:defaultDefiniton:">+storeWithObjectsArray:defaultDefiniton:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayStore(cm)storeWithObjectsArray:defaultDefiniton:">+storeWithObjectsArray:<wbr>defaultDefiniton:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -647,7 +649,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayStore.h#L31">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayStore.h#L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -657,7 +659,7 @@
                     <code>
                     <a name="/c:objc(cs)SCArrayStore(im)initWithObjectsArray:defaultDefiniton:"></a>
                     <a name="//apple_ref/objc/Method/-initWithObjectsArray:defaultDefiniton:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayStore(im)initWithObjectsArray:defaultDefiniton:">-initWithObjectsArray:defaultDefiniton:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayStore(im)initWithObjectsArray:defaultDefiniton:">-initWithObjectsArray:<wbr>defaultDefiniton:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -676,14 +678,9 @@
           <span class="nf">defaultDefiniton</span><span class="p">:(</span><span class="n"><a href="../Classes/SCDataDefinition.html">SCDataDefinition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">definition</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/SCArrayStore.html#/c:objc(cs)SCArrayStore(py)objectsArray">objectsArray</a></span> <span class="nv">array</span><span class="p">:</span> <span class="kt">NSMutableArray</span><span class="o">!</span><span class="p">,</span> <span class="n">defaultDefiniton</span> <span class="nv">definition</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCDataDefinition.html">SCDataDefinition</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayStore.h#L34">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayStore.h#L34">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -708,17 +705,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">objectsArray</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">objectsArray</span><span class="p">:</span> <span class="kt">NSMutableArray</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">objectsArray</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayStore.h#L37">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayStore.h#L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -731,8 +723,8 @@
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

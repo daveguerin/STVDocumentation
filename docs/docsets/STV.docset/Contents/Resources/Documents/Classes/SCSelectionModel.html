@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCSelectionModel</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCSelectionModel</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCArrayOfStringsModel.html">SCArrayOfStringsModel</a></span> <span class="p">{</span>
   <span class="n">BOOL</span> <span class="n">boundToNSNumber</span><span class="p">;</span>
   <span class="n">BOOL</span> <span class="n">boundToNSString</span><span class="p">;</span>
@@ -616,16 +614,21 @@ iPhone. The section can be configured to allow multiple selection and to allow n
 <p>Since this model is based on SCArrayOfStringsModel, it supports automatically generated sections and automatic search functionality.</p>
 
 <p>There are three ways to set/retrieve the section&rsquo;s selection:</p>
+
+<ul>
 <li>Through binding an object to the model, and specifying a property name to bind the selection index
 result to. The bound property must be of type NSMutableSet if multiple selection is allowed, otherwise
 it must be of type NSNumber or NSString.</li>
 <li><p>Through the selectedItemsIndexes or selectedItemIndex properties.</p></li>
-<div class="aside aside-see">
+</ul><div class="aside aside-see">
     <p class="aside-title">See</p>
     <p>SCSelectionSection.</p>
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L862-L991">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -658,7 +661,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -688,7 +691,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -718,7 +721,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -748,7 +751,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -778,7 +781,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -808,7 +811,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -838,7 +841,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -868,7 +871,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -898,7 +901,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -928,7 +931,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -958,7 +961,7 @@ it must be of type NSNumber or NSString.</li>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -969,9 +972,11 @@ it must be of type NSNumber or NSString.</li>
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -979,7 +984,7 @@ it must be of type NSNumber or NSString.</li>
                     <code>
                     <a name="/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectedIndexPropertyName:items:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:boundObject:selectedIndexPropertyName:items:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectedIndexPropertyName:items:">-initWithTableView:boundObject:selectedIndexPropertyName:items:</a>
+                    <a class="token" href="#/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectedIndexPropertyName:items:">-initWithTableView:<wbr>boundObject:<wbr>selectedIndexPropertyName:<wbr>items:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -999,11 +1004,6 @@ an NSNumber bound property name, and an array of selection items.</p>
                       <span class="nf">boundObject</span><span class="p">:(</span><span class="n">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nv">object</span>
         <span class="nf">selectedIndexPropertyName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyName</span>
                             <span class="nf">items</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">sectionItems</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObject">boundObject</a></span> <span class="nv">object</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span><span class="p">,</span> <span class="n">selectedIndexPropertyName</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">items</span> <span class="nv">sectionItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1067,7 +1067,7 @@ an NSString type.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L898-L901">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L898-L901">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1077,7 +1077,7 @@ an NSString type.</p>
                     <code>
                     <a name="/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectedIndexesPropertyName:items:allowMultipleSelection:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:boundObject:selectedIndexesPropertyName:items:allowMultipleSelection:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectedIndexesPropertyName:items:allowMultipleSelection:">-initWithTableView:boundObject:selectedIndexesPropertyName:items:allowMultipleSelection:</a>
+                    <a class="token" href="#/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectedIndexesPropertyName:items:allowMultipleSelection:">-initWithTableView:<wbr>boundObject:<wbr>selectedIndexesPropertyName:<wbr>items:<wbr>allowMultipleSelection:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1098,11 +1098,6 @@ a bound property name, an array of selection items, and whether to allow multipl
       <span class="nf">selectedIndexesPropertyName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyName</span>
                             <span class="nf">items</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">sectionItems</span>
            <span class="nf">allowMultipleSelection</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">multipleSelection</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObject">boundObject</a></span> <span class="nv">object</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span><span class="p">,</span> <span class="n">selectedIndexesPropertyName</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">items</span> <span class="nv">sectionItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@allowMultipleSelection">allowMultipleSelection</a></span> <span class="nv">multipleSelection</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1178,7 +1173,7 @@ an NSString type.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L917-L921">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L917-L921">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1188,7 +1183,7 @@ an NSString type.</p>
                     <code>
                     <a name="/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectionStringPropertyName:items:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:boundObject:selectionStringPropertyName:items:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectionStringPropertyName:items:">-initWithTableView:boundObject:selectionStringPropertyName:items:</a>
+                    <a class="token" href="#/c:objc(cs)SCSelectionModel(im)initWithTableView:boundObject:selectionStringPropertyName:items:">-initWithTableView:<wbr>boundObject:<wbr>selectionStringPropertyName:<wbr>items:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1208,11 +1203,6 @@ an NSString bound property name, and an array of selection items.</p>
                       <span class="nf">boundObject</span><span class="p">:(</span><span class="n">NSObject</span> <span class="o">*</span><span class="p">)</span><span class="nv">object</span>
       <span class="nf">selectionStringPropertyName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyName</span>
                             <span class="nf">items</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">sectionItems</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObject">boundObject</a></span> <span class="nv">object</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span><span class="p">,</span> <span class="n">selectionStringPropertyName</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">items</span> <span class="nv">sectionItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1276,7 +1266,7 @@ an NSString type.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L936-L939">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L936-L939">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1287,9 +1277,11 @@ an NSString type.</p>
               <div class="task-name-container">
                 <a name="/Configuration"></a>
                 <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
-                <a href="#/Configuration">
-                  <h3 class="section-name">Configuration</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><p>Configuration</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1312,17 +1304,12 @@ an NSString type.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObject">boundObject</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">boundObject</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObject">boundObject</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L947">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1347,17 +1334,12 @@ an NSString type.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/SCDataStore.html">SCDataStore</a></span> <span class="o">*</span><span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObjectStore">boundObjectStore</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">boundObjectStore</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCDataStore.html">SCDataStore</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n"><a href="../Classes/SCDataStore.html">SCDataStore</a></span> <span class="o">*</span><span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundObjectStore">boundObjectStore</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L950">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1382,17 +1364,12 @@ an NSString type.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundPropertyName">boundPropertyName</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">boundPropertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@boundPropertyName">boundPropertyName</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L953">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L953">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1417,17 +1394,12 @@ an NSString type.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">boundValue</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">boundValue</span><span class="p">:</span> <span class="kt">NSObject</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">boundValue</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L956">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L956">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1452,8 +1424,7 @@ to define the section&rsquo;s selection.</p>
     If you have bound this section to an object or a key, you can define the section&rsquo;s selection
 using either the bound property value or the key value, respectively. 
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     In case of no selection, this property will be set to an NSNumber of value -1.
 
@@ -1464,17 +1435,12 @@ using either the bound property value or the key value, respectively.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">selectedItemIndex</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">selectedItemIndex</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">selectedItemIndex</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L966">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L966">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1506,17 +1472,12 @@ using either the bound property value or the key value, respectively.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">selectedItemsIndexes</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectedItemsIndexes</span><span class="p">:</span> <span class="kt">NSMutableSet</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">selectedItemsIndexes</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L975">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L975">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1541,17 +1502,12 @@ using either the bound property value or the key value, respectively.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@allowMultipleSelection">allowMultipleSelection</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowMultipleSelection</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@allowMultipleSelection">allowMultipleSelection</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L978">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L978">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1576,17 +1532,12 @@ using either the bound property value or the key value, respectively.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@allowNoSelection">allowNoSelection</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowNoSelection</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@allowNoSelection">allowNoSelection</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L981">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L981">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1612,17 +1563,12 @@ using either the bound property value or the key value, respectively.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@maximumSelections">maximumSelections</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maximumSelections</span><span class="p">:</span> <span class="kt">UInt</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSUInteger</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@maximumSelections">maximumSelections</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L985">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L985">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1647,17 +1593,12 @@ using either the bound property value or the key value, respectively.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@autoDismissViewController">autoDismissViewController</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">autoDismissViewController</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n"><a href="../Classes/SCSelectionModel.html#/c:objc(cs)SCSelectionModel@autoDismissViewController">autoDismissViewController</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L988">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L988">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1670,8 +1611,8 @@ using either the bound property value or the key value, respectively.
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

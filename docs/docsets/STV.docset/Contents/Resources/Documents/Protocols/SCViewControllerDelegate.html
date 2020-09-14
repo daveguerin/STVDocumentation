@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCViewControllerDelegate</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SCViewControllerDelegate</span></code></pre>
 
                 </div>
@@ -598,6 +596,9 @@
 <p>This protocol should be adopted by objects that want to mediate as a delegate for 
 SCViewController. All methods for this protocol are optional.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L174-L279">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -610,7 +611,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerViewDidLoad:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerViewDidLoad:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerViewDidLoad:">-viewControllerViewDidLoad:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerViewDidLoad:">-viewControllerViewDidLoad:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -632,14 +633,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerViewDidLoad</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerViewDidLoad</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L181">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L181">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -649,7 +645,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillAppear:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerWillAppear:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillAppear:">-viewControllerWillAppear:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillAppear:">-viewControllerWillAppear:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -671,14 +667,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerWillAppear</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L186">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L186">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -688,7 +679,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidAppear:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidAppear:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidAppear:">-viewControllerDidAppear:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidAppear:">-viewControllerDidAppear:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -710,14 +701,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerDidAppear</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L191">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -727,7 +713,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillDisappear:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerWillDisappear:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillDisappear:">-viewControllerWillDisappear:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillDisappear:">-viewControllerWillDisappear:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -749,14 +735,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerWillDisappear</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L196">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L196">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -766,7 +747,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidDisappear:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidDisappear:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidDisappear:">-viewControllerDidDisappear:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidDisappear:">-viewControllerDidDisappear:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -788,14 +769,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerDidDisappear</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L201">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L201">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -805,7 +781,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillPresent:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerWillPresent:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillPresent:">-viewControllerWillPresent:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillPresent:">-viewControllerWillPresent:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -827,14 +803,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerWillPresent</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerWillPresent</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L206">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L206">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -844,7 +815,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidPresent:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidPresent:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidPresent:">-viewControllerDidPresent:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidPresent:">-viewControllerDidPresent:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -866,14 +837,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerDidPresent</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidPresent</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L211">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L211">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -883,7 +849,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerShouldDismiss:cancelButtonTapped:doneButtonTapped:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerShouldDismiss:cancelButtonTapped:doneButtonTapped:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerShouldDismiss:cancelButtonTapped:doneButtonTapped:">-viewControllerShouldDismiss:cancelButtonTapped:doneButtonTapped:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerShouldDismiss:cancelButtonTapped:doneButtonTapped:">-viewControllerShouldDismiss:<wbr>cancelButtonTapped:<wbr>doneButtonTapped:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -910,14 +876,9 @@ SCViewController. All methods for this protocol are optional.</p>
                    <span class="nf">doneButtonTapped</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneTapped</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerShouldDismiss</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">,</span> <span class="n">cancelButtonTapped</span> <span class="nv">cancelTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">doneButtonTapped</span> <span class="nv">doneTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L219-L220">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L219-L220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -927,7 +888,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillDismiss:cancelButtonTapped:doneButtonTapped:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerWillDismiss:cancelButtonTapped:doneButtonTapped:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillDismiss:cancelButtonTapped:doneButtonTapped:">-viewControllerWillDismiss:cancelButtonTapped:doneButtonTapped:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillDismiss:cancelButtonTapped:doneButtonTapped:">-viewControllerWillDismiss:<wbr>cancelButtonTapped:<wbr>doneButtonTapped:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -953,14 +914,9 @@ SCViewController. All methods for this protocol are optional.</p>
                  <span class="nf">doneButtonTapped</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneTapped</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerWillDismiss</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">,</span> <span class="n">cancelButtonTapped</span> <span class="nv">cancelTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">doneButtonTapped</span> <span class="nv">doneTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L227-L228">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L227-L228">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -970,7 +926,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidDismiss:cancelButtonTapped:doneButtonTapped:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidDismiss:cancelButtonTapped:doneButtonTapped:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidDismiss:cancelButtonTapped:doneButtonTapped:">-viewControllerDidDismiss:cancelButtonTapped:doneButtonTapped:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidDismiss:cancelButtonTapped:doneButtonTapped:">-viewControllerDidDismiss:<wbr>cancelButtonTapped:<wbr>doneButtonTapped:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -996,14 +952,9 @@ SCViewController. All methods for this protocol are optional.</p>
                 <span class="nf">doneButtonTapped</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneTapped</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidDismiss</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">,</span> <span class="n">cancelButtonTapped</span> <span class="nv">cancelTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">doneButtonTapped</span> <span class="nv">doneTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L235-L236">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L235-L236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1013,7 +964,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillGainFocus:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerWillGainFocus:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillGainFocus:">-viewControllerWillGainFocus:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillGainFocus:">-viewControllerWillGainFocus:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1035,14 +986,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerWillGainFocus</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerWillGainFocus</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L245">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L245">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1052,7 +998,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidGainFocus:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidGainFocus:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidGainFocus:">-viewControllerDidGainFocus:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidGainFocus:">-viewControllerDidGainFocus:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1074,14 +1020,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerDidGainFocus</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidGainFocus</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L250">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L250">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1091,7 +1032,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillLoseFocus:cancelButtonTapped:doneButtonTapped:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerWillLoseFocus:cancelButtonTapped:doneButtonTapped:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillLoseFocus:cancelButtonTapped:doneButtonTapped:">-viewControllerWillLoseFocus:cancelButtonTapped:doneButtonTapped:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerWillLoseFocus:cancelButtonTapped:doneButtonTapped:">-viewControllerWillLoseFocus:<wbr>cancelButtonTapped:<wbr>doneButtonTapped:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1117,14 +1058,9 @@ SCViewController. All methods for this protocol are optional.</p>
                    <span class="nf">doneButtonTapped</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneTapped</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerWillLoseFocus</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">,</span> <span class="n">cancelButtonTapped</span> <span class="nv">cancelTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">doneButtonTapped</span> <span class="nv">doneTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L257-L258">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L257-L258">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1134,7 +1070,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidLoseFocus:cancelButtonTapped:doneButtonTapped:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidLoseFocus:cancelButtonTapped:doneButtonTapped:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidLoseFocus:cancelButtonTapped:doneButtonTapped:">-viewControllerDidLoseFocus:cancelButtonTapped:doneButtonTapped:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidLoseFocus:cancelButtonTapped:doneButtonTapped:">-viewControllerDidLoseFocus:<wbr>cancelButtonTapped:<wbr>doneButtonTapped:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1160,14 +1096,9 @@ SCViewController. All methods for this protocol are optional.</p>
                   <span class="nf">doneButtonTapped</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneTapped</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidLoseFocus</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">,</span> <span class="n">cancelButtonTapped</span> <span class="nv">cancelTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">doneButtonTapped</span> <span class="nv">doneTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L265-L266">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L265-L266">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1177,7 +1108,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidEnterEditingMode:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidEnterEditingMode:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidEnterEditingMode:">-viewControllerDidEnterEditingMode:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidEnterEditingMode:">-viewControllerDidEnterEditingMode:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1195,14 +1126,9 @@ SCViewController. All methods for this protocol are optional.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewControllerDidEnterEditingMode</span><span class="p">:(</span><span class="n"><a href="../Classes/SCViewController.html">SCViewController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidEnterEditingMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L269">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L269">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1212,7 +1138,7 @@ SCViewController. All methods for this protocol are optional.</p>
                     <code>
                     <a name="/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidExitEditingMode:cancelButtonTapped:doneButtonTapped:"></a>
                     <a name="//apple_ref/objc/Method/-viewControllerDidExitEditingMode:cancelButtonTapped:doneButtonTapped:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidExitEditingMode:cancelButtonTapped:doneButtonTapped:">-viewControllerDidExitEditingMode:cancelButtonTapped:doneButtonTapped:</a>
+                    <a class="token" href="#/c:objc(pl)SCViewControllerDelegate(im)viewControllerDidExitEditingMode:cancelButtonTapped:doneButtonTapped:">-viewControllerDidExitEditingMode:<wbr>cancelButtonTapped:<wbr>doneButtonTapped:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1238,14 +1164,9 @@ SCViewController. All methods for this protocol are optional.</p>
                         <span class="nf">doneButtonTapped</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">doneTapped</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">viewControllerDidExitEditingMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCViewController.html">SCViewController</a></span><span class="o">!</span><span class="p">,</span> <span class="n">cancelButtonTapped</span> <span class="nv">cancelTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">doneButtonTapped</span> <span class="nv">doneTapped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCViewController.h#L276-L277">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCViewController.h#L276-L277">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1258,8 +1179,8 @@ SCViewController. All methods for this protocol are optional.</p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

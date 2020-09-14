@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCArrayOfObjectsModel</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCArrayOfObjectsModel</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCArrayOfItemsModel.html">SCArrayOfItemsModel</a></span> <span class="p">{</span>
   <span class="n">NSString</span> <span class="o">*</span><span class="n">searchPropertyName</span><span class="p">;</span>
 <span class="p">}</span></code></pre>
@@ -601,6 +599,9 @@
 
 <p>&lsquo;SCArrayOfItemsModel&rsquo; will automatically generate a set of SCArrayOfObjectsSection(s) if the sectionHeaderTitleForItem modelAction is implemented, otherwise it will only generate a single SCArrayOfObjectsSection.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L745-L791">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -633,7 +634,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -644,9 +645,11 @@
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -654,7 +657,7 @@
                     <code>
                     <a name="/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:items:itemsDefinition:"></a>
                     <a name="//apple_ref/objc/Method/+modelWithTableView:items:itemsDefinition:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:items:itemsDefinition:">+modelWithTableView:items:itemsDefinition:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:items:itemsDefinition:">+modelWithTableView:<wbr>items:<wbr>itemsDefinition:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -721,7 +724,7 @@ move operations.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L763">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L763">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -731,7 +734,7 @@ move operations.</p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:items:itemsDefinition:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:items:itemsDefinition:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:items:itemsDefinition:">-initWithTableView:items:itemsDefinition:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:items:itemsDefinition:">-initWithTableView:<wbr>items:<wbr>itemsDefinition:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -749,11 +752,6 @@ move operations.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithTableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span>
                             <span class="nf">items</span><span class="p">:(</span><span class="n">NSMutableArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">items</span>
                   <span class="nf">itemsDefinition</span><span class="p">:(</span><span class="n"><a href="../Classes/SCDataDefinition.html">SCDataDefinition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">definition</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="nv">items</span><span class="p">:</span> <span class="kt">NSMutableArray</span><span class="o">!</span><span class="p">,</span> <span class="n">itemsDefinition</span> <span class="nv">definition</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCDataDefinition.html">SCDataDefinition</a></span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -803,7 +801,7 @@ move operations.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L775">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L775">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,9 +812,11 @@ move operations.</p>
               <div class="task-name-container">
                 <a name="/Configuration"></a>
                 <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
-                <a href="#/Configuration">
-                  <h3 class="section-name">Configuration</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><p>Configuration</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -834,8 +834,8 @@ move operations.</p>
                       <div class="abstract">
                         <p>The name of the object&rsquo;s property that the value of which will be used to search the items array 
 when the user types a search term inside the model&rsquo;s associated search bar. To search more than one property 
-value, separate the property names by a semi-colon (e.g.: @<q>firstName;lastName</q>). To search all 
-properties in the object&rsquo;s class definition, set the property to an astrisk (e.g.: @<q>*</q>).
+value, separate the property names by a semi-colon (e.g.: @&ldquo;firstName;lastName&rdquo;). To search all 
+properties in the object&rsquo;s class definition, set the property to an astrisk (e.g.: @&ldquo;*&rdquo;).
 If the property is not set, it defaults to the value of the object&rsquo;s class definition titlePropertyName property.</p>
 
                       </div>
@@ -843,17 +843,12 @@ If the property is not set, it defaults to the value of the object&rsquo;s class
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n"><a href="../Classes/SCArrayOfObjectsModel.html#/c:objc(cs)SCArrayOfObjectsModel@searchPropertyName">searchPropertyName</a></span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">searchPropertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n"><a href="../Classes/SCArrayOfObjectsModel.html#/c:objc(cs)SCArrayOfObjectsModel@searchPropertyName">searchPropertyName</a></span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewModel.h#L789">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewModel.h#L789">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -864,9 +859,11 @@ If the property is not set, it defaults to the value of the object&rsquo;s class
               <div class="task-name-container">
                 <a name="/STVCoreData"></a>
                 <a name="//apple_ref/objc/Section/STVCoreData" class="dashAnchor"></a>
-                <a href="#/STVCoreData">
-                  <h3 class="section-name">STVCoreData</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/STVCoreData"></a>
+                  <h3 class="section-name"><p>STVCoreData</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -874,7 +871,7 @@ If the property is not set, it defaults to the value of the object&rsquo;s class
                     <code>
                     <a name="/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:entityDefinition:"></a>
                     <a name="//apple_ref/objc/Method/+modelWithTableView:entityDefinition:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:entityDefinition:">+modelWithTableView:entityDefinition:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:entityDefinition:">+modelWithTableView:<wbr>entityDefinition:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -932,7 +929,7 @@ and an entity definition. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayOfObjectsModel+CoreData.h#L28">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayOfObjectsModel+CoreData.h#L28">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -942,7 +939,7 @@ and an entity definition. </p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:entityDefinition:filterPredicate:"></a>
                     <a name="//apple_ref/objc/Method/+modelWithTableView:entityDefinition:filterPredicate:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:entityDefinition:filterPredicate:">+modelWithTableView:entityDefinition:filterPredicate:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(cm)modelWithTableView:entityDefinition:filterPredicate:">+modelWithTableView:<wbr>entityDefinition:<wbr>filterPredicate:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -972,7 +969,7 @@ and an entity definition. </p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayOfObjectsModel+CoreData.h#L37">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayOfObjectsModel+CoreData.h#L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -982,7 +979,7 @@ and an entity definition. </p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:entityDefinition:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:entityDefinition:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:entityDefinition:">-initWithTableView:entityDefinition:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:entityDefinition:">-initWithTableView:<wbr>entityDefinition:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1005,11 +1002,6 @@ and an entity definition. </p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithTableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span>
                  <span class="nf">entityDefinition</span><span class="p">:(</span><span class="n"><a href="../Classes/SCEntityDefinition.html">SCEntityDefinition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">definition</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="n">entityDefinition</span> <span class="nv">definition</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCEntityDefinition.html">SCEntityDefinition</a></span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1045,7 +1037,7 @@ and an entity definition. </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayOfObjectsModel+CoreData.h#L49">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayOfObjectsModel+CoreData.h#L49">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,7 +1047,7 @@ and an entity definition. </p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:entityDefinition:filterPredicate:"></a>
                     <a name="//apple_ref/objc/Method/-initWithTableView:entityDefinition:filterPredicate:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:entityDefinition:filterPredicate:">-initWithTableView:entityDefinition:filterPredicate:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfObjectsModel(im)initWithTableView:entityDefinition:filterPredicate:">-initWithTableView:<wbr>entityDefinition:<wbr>filterPredicate:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1083,14 +1075,9 @@ and an entity definition. </p>
                   <span class="nf">filterPredicate</span><span class="p">:(</span><span class="n">NSPredicate</span> <span class="o">*</span><span class="p">)</span><span class="nv">predicate</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span><span class="p">,</span> <span class="n">entityDefinition</span> <span class="nv">definition</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCEntityDefinition.html">SCEntityDefinition</a></span><span class="o">!</span><span class="p">,</span> <span class="n">filterPredicate</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCArrayOfObjectsModel+CoreData.h#L59">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCArrayOfObjectsModel+CoreData.h#L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1103,8 +1090,8 @@ and an entity definition. </p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

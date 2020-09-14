@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCPropertyGroupArray</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCPropertyGroupArray</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="p">{</span>
   <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">propertyGroups</span><span class="p">;</span>
 <span class="p">}</span></code></pre>
@@ -604,6 +602,9 @@
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L403-L439">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -636,7 +637,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -647,9 +648,11 @@
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -677,7 +680,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L412">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L413">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -688,9 +691,11 @@
               <div class="task-name-container">
                 <a name="/Managing%20Groups"></a>
                 <a name="//apple_ref/objc/Section/Managing Groups" class="dashAnchor"></a>
-                <a href="#/Managing%20Groups">
-                  <h3 class="section-name">Managing Groups</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Managing%20Groups"></a>
+                  <h3 class="section-name"><p>Managing Groups</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -715,17 +720,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">groupCount</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">groupCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">groupCount</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L418">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L419">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -735,7 +735,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPropertyGroupArray(im)addGroup:"></a>
                     <a name="//apple_ref/objc/Method/-addGroup:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)addGroup:">-addGroup:</a>
+                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)addGroup:">-addGroup:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -753,14 +753,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addGroup</span><span class="p">:(</span><span class="n"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">group</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L421">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L422">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -770,7 +765,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPropertyGroupArray(im)insertGroup:atIndex:"></a>
                     <a name="//apple_ref/objc/Method/-insertGroup:atIndex:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)insertGroup:atIndex:">-insertGroup:atIndex:</a>
+                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)insertGroup:atIndex:">-insertGroup:<wbr>atIndex:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -788,14 +783,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">insertGroup</span><span class="p">:(</span><span class="n"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">group</span> <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span><span class="o">!</span><span class="p">,</span> <span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L424">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L425">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -805,7 +795,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPropertyGroupArray(im)groupAtIndex:"></a>
                     <a name="//apple_ref/objc/Method/-groupAtIndex:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)groupAtIndex:">-groupAtIndex:</a>
+                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)groupAtIndex:">-groupAtIndex:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,14 +813,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">groupAtIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">group</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span><span class="o">!</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L427">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L428">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -840,7 +825,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPropertyGroupArray(im)groupByHeaderTitle:"></a>
                     <a name="//apple_ref/objc/Method/-groupByHeaderTitle:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)groupByHeaderTitle:">-groupByHeaderTitle:</a>
+                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)groupByHeaderTitle:">-groupByHeaderTitle:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -858,14 +843,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">groupByHeaderTitle</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">headerTitle</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">group</span><span class="p">(</span><span class="n">byHeaderTitle</span> <span class="nv">headerTitle</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SCPropertyGroup.html">SCPropertyGroup</a></span><span class="o">!</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L430">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -875,7 +855,7 @@
                     <code>
                     <a name="/c:objc(cs)SCPropertyGroupArray(im)removeGroupAtIndex:"></a>
                     <a name="//apple_ref/objc/Method/-removeGroupAtIndex:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)removeGroupAtIndex:">-removeGroupAtIndex:</a>
+                    <a class="token" href="#/c:objc(cs)SCPropertyGroupArray(im)removeGroupAtIndex:">-removeGroupAtIndex:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,14 +873,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeGroupAtIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeGroup</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L433">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L434">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -928,14 +903,9 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">removeAllGroups</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAllGroups</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L436">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L437">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -948,8 +918,8 @@
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

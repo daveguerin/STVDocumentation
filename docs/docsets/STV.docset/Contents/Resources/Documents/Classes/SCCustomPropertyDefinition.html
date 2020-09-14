@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCCustomPropertyDefinition</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCCustomPropertyDefinition</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCPropertyDefinition.html">SCPropertyDefinition</a></span></code></pre>
 
                 </div>
@@ -605,6 +603,9 @@ a custom user inteface element (e.g.: custom cell). </p>
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L215-L306">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -614,9 +615,11 @@ a custom user inteface element (e.g.: custom cell). </p>
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -624,7 +627,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementClass:objectBindings:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithName:uiElementClass:objectBindings:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementClass:objectBindings:">+definitionWithName:uiElementClass:objectBindings:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementClass:objectBindings:">+definitionWithName:<wbr>uiElementClass:<wbr>objectBindings:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -654,7 +657,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L227">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L228">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -664,7 +667,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementClass:objectBindingsString:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithName:uiElementClass:objectBindingsString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementClass:objectBindingsString:">+definitionWithName:uiElementClass:objectBindingsString:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementClass:objectBindingsString:">+definitionWithName:<wbr>uiElementClass:<wbr>objectBindingsString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -674,16 +677,19 @@ a custom user inteface element (e.g.: custom cell). </p>
                       <div class="abstract">
                         <p>Allocates and returns an initialized &lsquo;SCCustomPropertyDefinition&rsquo; given a property name and a class of the  custom user interface element to generate.
  *</p>
+
+<ul>
 <li>- parameter: propertyName The name of the property.</li>
 <li>- parameter: elementClass The class of the custom user interface element that will be generated.</li>
 <li></li>
 <li><p>Example bindings string:
-    NSString *bindingsString = @<q>1:firstName;2:lastName</q>;</p></li>
+    NSString *bindingsString = @&ldquo;1:firstName;2:lastName&rdquo;;</p></li>
 <li><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     IMPORTANT: All control tags must be greater than zero.
 
 </div></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -716,7 +722,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L239">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L240">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -726,7 +732,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementNibName:objectBindings:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithName:uiElementNibName:objectBindings:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementNibName:objectBindings:">+definitionWithName:uiElementNibName:objectBindings:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementNibName:objectBindings:">+definitionWithName:<wbr>uiElementNibName:<wbr>objectBindings:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -742,6 +748,7 @@ a custom user inteface element (e.g.: custom cell). </p>
 <li>- parameter: elementNibName The name of the nib file containing the custom user interface element that will be generated.</li>
 <li>- parameter: bindings This dictionary specifies how each of the uiElement&rsquo;s custom controls binds itself to the data definition&rsquo;s properties. Each dictionary key should be the tag string value of one of the uiElement&rsquo;s custom controls, and the value should be the name of the class definition&rsquo;s property that is bound to that control.</li>
 <li>- warning: IMPORTANT: All control tags must be greater than zero.</li>
+<li>- note: If the NIB is a SwiftPM resource then the name should use a PACKAGE_TARGET_Name format.</li>
 </ul>
 
                       </div>
@@ -756,7 +763,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L248">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L249">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -766,7 +773,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementNibName:objectBindingsString:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithName:uiElementNibName:objectBindingsString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementNibName:objectBindingsString:">+definitionWithName:uiElementNibName:objectBindingsString:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(cm)definitionWithName:uiElementNibName:objectBindingsString:">+definitionWithName:<wbr>uiElementNibName:<wbr>objectBindingsString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -776,16 +783,24 @@ a custom user inteface element (e.g.: custom cell). </p>
                       <div class="abstract">
                         <p>Allocates and returns an initialized &lsquo;SCCustomPropertyDefinition&rsquo; given a property name and the name of the nib file containing the custom user interface element to generate.
  *</p>
+
+<ul>
 <li>- parameter: propertyName The name of the property.</li>
 <li>- parameter: elementNibName The name of the nib file containing the custom user interface element that will be generated.</li>
 <li></li>
 <li><p>Example bindings string:
-    NSString *bindingsString = @<q>1:firstName;2:lastName</q>; </p></li>
+    NSString *bindingsString = @&ldquo;1:firstName;2:lastName&rdquo;; </p></li>
 <li><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     IMPORTANT: All control tags must be greater than zero.
 
 </div></li>
+<li><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If the NIB is a SwiftPM resource then the name should use a PACKAGE_TARGET_Name format.
+
+</div></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -818,7 +833,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L260">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L261">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -828,7 +843,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementClass:objectBindings:"></a>
                     <a name="//apple_ref/objc/Method/-initWithName:uiElementClass:objectBindings:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementClass:objectBindings:">-initWithName:uiElementClass:objectBindings:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementClass:objectBindings:">-initWithName:<wbr>uiElementClass:<wbr>objectBindings:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -856,14 +871,9 @@ a custom user inteface element (e.g.: custom cell). </p>
               <span class="nf">objectBindings</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">bindings</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">name</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">uiElementClass</span> <span class="nv">elementClass</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="n">objectBindings</span> <span class="nv">bindings</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L269">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L270">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -873,7 +883,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementClass:objectBindingsString:"></a>
                     <a name="//apple_ref/objc/Method/-initWithName:uiElementClass:objectBindingsString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementClass:objectBindingsString:">-initWithName:uiElementClass:objectBindingsString:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementClass:objectBindingsString:">-initWithName:<wbr>uiElementClass:<wbr>objectBindingsString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -883,16 +893,19 @@ a custom user inteface element (e.g.: custom cell). </p>
                       <div class="abstract">
                         <p>Returns an initialized &lsquo;SCCustomPropertyDefinition&rsquo; given a property name and a class of the  custom user interface element to generate.
  *</p>
+
+<ul>
 <li>- parameter: propertyName The name of the property.</li>
 <li>- parameter: elementClass The class of the custom user interface element that will be generated.</li>
 <li></li>
 <li><p>Example bindings string:
-    NSString *bindingsString = @<q>1:firstName;2:lastName</q>;</p></li>
+    NSString *bindingsString = @&ldquo;1:firstName;2:lastName&rdquo;;</p></li>
 <li><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     IMPORTANT: All control tags must be greater than zero.
 
 </div></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -902,11 +915,6 @@ a custom user inteface element (e.g.: custom cell). </p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyName</span>
               <span class="nf">uiElementClass</span><span class="p">:(</span><span class="n">Class</span><span class="p">)</span><span class="nv">elementClass</span>
         <span class="nf">objectBindingsString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">bindingsString</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">name</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">uiElementClass</span> <span class="nv">elementClass</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="n">objectBindingsString</span> <span class="nv">bindingsString</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -930,7 +938,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L281">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L282">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -940,7 +948,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementNibName:objectBindings:"></a>
                     <a name="//apple_ref/objc/Method/-initWithName:uiElementNibName:objectBindings:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementNibName:objectBindings:">-initWithName:uiElementNibName:objectBindings:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementNibName:objectBindings:">-initWithName:<wbr>uiElementNibName:<wbr>objectBindings:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -956,6 +964,7 @@ a custom user inteface element (e.g.: custom cell). </p>
 <li>- parameter: elementNibName The name of the nib file containing the custom user interface element that will be generated.</li>
 <li>- parameter: bindings This dictionary specifies how each of the uiElement&rsquo;s custom controls binds itself to the class definition&rsquo;s properties. Each dictionary key should be the tag string value of one of the uiElement&rsquo;s custom controls, and the value should be the name of the class definition&rsquo;s property that is bound to that control.</li>
 <li>- warning: IMPORTANT: All control tags must be greater than zero.</li>
+<li>- note: If the NIB is a SwiftPM resource then the name should use a PACKAGE_TARGET_Name format.</li>
 </ul>
 
                       </div>
@@ -968,14 +977,9 @@ a custom user inteface element (e.g.: custom cell). </p>
               <span class="nf">objectBindings</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">bindings</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">name</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">uiElementNibName</span> <span class="nv">elementNibName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">objectBindings</span> <span class="nv">bindings</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L290">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L291">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -985,7 +989,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                     <code>
                     <a name="/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementNibName:objectBindingsString:"></a>
                     <a name="//apple_ref/objc/Method/-initWithName:uiElementNibName:objectBindingsString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementNibName:objectBindingsString:">-initWithName:uiElementNibName:objectBindingsString:</a>
+                    <a class="token" href="#/c:objc(cs)SCCustomPropertyDefinition(im)initWithName:uiElementNibName:objectBindingsString:">-initWithName:<wbr>uiElementNibName:<wbr>objectBindingsString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -995,16 +999,24 @@ a custom user inteface element (e.g.: custom cell). </p>
                       <div class="abstract">
                         <p>Allocates and returns an initialized &lsquo;SCCustomPropertyDefinition&rsquo; given a property name and a class of the  custom user interface element to generate.
  *</p>
+
+<ul>
 <li>- parameter: propertyName The name of the property.</li>
 <li>- parameter: elementNibName The name of the nib file containing the custom user interface element that will be generated.</li>
 <li></li>
 <li><p>Example bindings string:
-    NSString *bindingsString = @<q>1:firstName;2:lastName</q>;</p></li>
+    NSString *bindingsString = @&ldquo;1:firstName;2:lastName&rdquo;;</p></li>
 <li><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     IMPORTANT: All control tags must be greater than zero.
 
 </div></li>
+<li><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If the NIB is a SwiftPM resource then the name should use a PACKAGE_TARGET_Name format.
+
+</div></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -1014,11 +1026,6 @@ a custom user inteface element (e.g.: custom cell). </p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyName</span>
             <span class="nf">uiElementNibName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">elementNibName</span>
         <span class="nf">objectBindingsString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">bindingsString</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">name</span> <span class="nv">propertyName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">uiElementNibName</span> <span class="nv">elementNibName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">objectBindingsString</span> <span class="nv">bindingsString</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1042,7 +1049,7 @@ a custom user inteface element (e.g.: custom cell). </p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCPropertyDefinition.h#L302">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCPropertyDefinition.h#L303">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,8 +1062,8 @@ a custom user inteface element (e.g.: custom cell). </p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

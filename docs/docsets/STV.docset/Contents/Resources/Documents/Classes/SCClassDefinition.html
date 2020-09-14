@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCClassDefinition</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCClassDefinition</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCDataDefinition.html">SCDataDefinition</a></span></code></pre>
 
                 </div>
@@ -607,14 +605,14 @@ the generated property definitions, add new definitions, or remove generated def
 <p>Sample use:
    // Extend the definition of &lsquo;Task&rsquo; (user defined class)
    SCClassDefinition *taskDef = [SCClassDefinition definitionWithClass:[Task class] 
-       propertyNamesString:@<q>Task Details:(name,description,category,dueDate);Task Status:(completed)</q>];
-   SCPropertyDefinition *namePropertyDef = [taskDef propertyDefinitionWithName:@<q>name</q>];
+       propertyNamesString:@&ldquo;Task Details:(name,description,category,dueDate);Task Status:(completed)&rdquo;];
+   SCPropertyDefinition *namePropertyDef = [taskDef propertyDefinitionWithName:@&ldquo;name&rdquo;];
    namePropertyDef.required = TRUE;
-   SCPropertyDefinition *descPropertyDef = [taskDef propertyDefinitionWithName:@<q>description</q>];
+   SCPropertyDefinition *descPropertyDef = [taskDef propertyDefinitionWithName:@&ldquo;description&rdquo;];
    descPropertyDef.type = SCPropertyTypeTextView;
-   SCPropertyDefinition *categoryPropertyDef = [taskDef propertyDefinitionWithName:@<q>category</q>];
+   SCPropertyDefinition *categoryPropertyDef = [taskDef propertyDefinitionWithName:@&ldquo;category&rdquo;];
    categoryPropertyDef.type = SCPropertyTypeSelection;
-   NSArray *categoryItems = [NSArray arrayWithObjects:@<q>Home</q>, @<q>Work</q>, @<q>Other</q>, nil];
+   NSArray *categoryItems = [NSArray arrayWithObjects:@&ldquo;Home&rdquo;, @&ldquo;Work&rdquo;, @&ldquo;Other&rdquo;, nil];
    categoryPropertyDef.attributes = [SCSelectionAttributes attributesWithItems:categoryItems 
        allowMultipleSelection:NO allowNoSelection:NO];</p>
 <div class="aside aside-see">
@@ -623,6 +621,9 @@ the generated property definitions, add new definitions, or remove generated def
 
 </div>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L46-L168">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -632,9 +633,11 @@ the generated property definitions, add new definitions, or remove generated def
               <div class="task-name-container">
                 <a name="/Creation%20and%20Initialization"></a>
                 <a name="//apple_ref/objc/Section/Creation and Initialization" class="dashAnchor"></a>
-                <a href="#/Creation%20and%20Initialization">
-                  <h3 class="section-name">Creation and Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Creation%20and%20Initialization"></a>
+                  <h3 class="section-name"><p>Creation and Initialization</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -642,7 +645,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(cm)definitionWithClass:autoGeneratePropertyDefinitions:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithClass:autoGeneratePropertyDefinitions:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:autoGeneratePropertyDefinitions:">+definitionWithClass:autoGeneratePropertyDefinitions:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:autoGeneratePropertyDefinitions:">+definitionWithClass:<wbr>autoGeneratePropertyDefinitions:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -696,7 +699,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L59">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -706,7 +709,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNamesString:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithClass:propertyNamesString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNamesString:">+definitionWithClass:propertyNamesString:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNamesString:">+definitionWithClass:<wbr>propertyNamesString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -721,8 +724,8 @@ the generated property definitions, add new definitions, or remove generated def
  the property definition customization.</p>
 
 <p>Property names string syntax options:
-    @<q>property1;property2;property3;&hellip;</q>
-    @<q>group1 header:(property1, property2,&hellip;):group1 footer;group2&hellip;</q></p>
+    @&ldquo;property1;property2;property3;&hellip;&rdquo;
+    @&ldquo;group1 header:(property1, property2,&hellip;):group1 footer;group2&hellip;&rdquo;</p>
 
                       </div>
                       <div class="declaration">
@@ -758,7 +761,7 @@ the generated property definitions, add new definitions, or remove generated def
                               </td>
                               <td>
                                 <div>
-                                  <p>A string with the property names separated by semi-colons. Example string: @<q>firstName;lastName</q>. Property groups can also be defined in the string using the following format: @<q>Personal Details:(firstName, lastName); Address:(street, state, country)</q>. The group title can also be ommitted to create a group with no title. For example: @<q>:(firstName, lastName)</q>.</p>
+                                  <p>A string with the property names separated by semi-colons. Example string: @&ldquo;firstName;lastName&rdquo;. Property groups can also be defined in the string using the following format: @&ldquo;Personal Details:(firstName, lastName); Address:(street, state, country)&rdquo;. The group title can also be ommitted to create a group with no title. For example: @&ldquo;:(firstName, lastName)&rdquo;.</p>
                                 </div>
                               </td>
                             </tr>
@@ -766,7 +769,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L74">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -776,7 +779,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNames:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithClass:propertyNames:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNames:">+definitionWithClass:propertyNames:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNames:">+definitionWithClass:<wbr>propertyNames:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -832,7 +835,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L85">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -842,7 +845,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNames:propertyTitles:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithClass:propertyNames:propertyTitles:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNames:propertyTitles:">+definitionWithClass:propertyNames:propertyTitles:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyNames:propertyTitles:">+definitionWithClass:<wbr>propertyNames:<wbr>propertyTitles:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -873,7 +876,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L95-L96">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L95-L96">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -883,7 +886,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyGroups:"></a>
                     <a name="//apple_ref/objc/Method/+definitionWithClass:propertyGroups:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyGroups:">+definitionWithClass:propertyGroups:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(cm)definitionWithClass:propertyGroups:">+definitionWithClass:<wbr>propertyGroups:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -910,7 +913,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L103">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -920,7 +923,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(im)initWithClass:autoGeneratePropertyDefinitions:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClass:autoGeneratePropertyDefinitions:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:autoGeneratePropertyDefinitions:">-initWithClass:autoGeneratePropertyDefinitions:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:autoGeneratePropertyDefinitions:">-initWithClass:<wbr>autoGeneratePropertyDefinitions:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -941,11 +944,6 @@ the generated property definitions, add new definitions, or remove generated def
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClass</span><span class="p">:(</span><span class="n">Class</span><span class="p">)</span><span class="nv">_cls</span>
     <span class="nf">autoGeneratePropertyDefinitions</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">autoGenerate</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">with</span> <span class="nv">_cls</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="n">autoGeneratePropertyDefinitions</span> <span class="nv">autoGenerate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -981,7 +979,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L114">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -991,7 +989,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNamesString:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClass:propertyNamesString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNamesString:">-initWithClass:propertyNamesString:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNamesString:">-initWithClass:<wbr>propertyNamesString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1006,8 +1004,8 @@ the generated property definitions, add new definitions, or remove generated def
  the property definition customization.</p>
 
 <p>Property names string syntax options:
-    @<q>property1;property2;property3;&hellip;</q>
-    @<q>group1 header:(property1, property2,&hellip;):group1 footer;group2&hellip;</q></p>
+    @&ldquo;property1;property2;property3;&hellip;&rdquo;
+    @&ldquo;group1 header:(property1, property2,&hellip;):group1 footer;group2&hellip;&rdquo;</p>
 
                       </div>
                       <div class="declaration">
@@ -1016,11 +1014,6 @@ the generated property definitions, add new definitions, or remove generated def
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClass</span><span class="p">:(</span><span class="n">Class</span><span class="p">)</span><span class="nv">_cls</span>
           <span class="nf">propertyNamesString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyNamesString</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">with</span> <span class="nv">_cls</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="nv">propertyNamesString</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1048,7 +1041,7 @@ the generated property definitions, add new definitions, or remove generated def
                               </td>
                               <td>
                                 <div>
-                                  <p>A string with the property names separated by semi-colons. Example string: @<q>firstName;lastName</q>. Property groups can also be defined in the string using the following format: @<q>Personal Details:(firstName, lastName); Address:(street, state, country)</q>. The group title can also be ommitted to create a group with no title. For example: @<q>:(firstName, lastName)</q>.</p>
+                                  <p>A string with the property names separated by semi-colons. Example string: @&ldquo;firstName;lastName&rdquo;. Property groups can also be defined in the string using the following format: @&ldquo;Personal Details:(firstName, lastName); Address:(street, state, country)&rdquo;. The group title can also be ommitted to create a group with no title. For example: @&ldquo;:(firstName, lastName)&rdquo;.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1056,7 +1049,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L129">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1066,7 +1059,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNames:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClass:propertyNames:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNames:">-initWithClass:propertyNames:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNames:">-initWithClass:<wbr>propertyNames:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1087,11 +1080,6 @@ the generated property definitions, add new definitions, or remove generated def
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithClass</span><span class="p">:(</span><span class="n">Class</span><span class="p">)</span><span class="nv">_cls</span>
                 <span class="nf">propertyNames</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyNames</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">with</span> <span class="nv">_cls</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="nv">propertyNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1127,7 +1115,7 @@ the generated property definitions, add new definitions, or remove generated def
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L140">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1137,7 +1125,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNames:propertyTitles:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClass:propertyNames:propertyTitles:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNames:propertyTitles:">-initWithClass:propertyNames:propertyTitles:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyNames:propertyTitles:">-initWithClass:<wbr>propertyNames:<wbr>propertyTitles:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1166,14 +1154,9 @@ the generated property definitions, add new definitions, or remove generated def
                <span class="nf">propertyTitles</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">propertyTitles</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">with</span> <span class="nv">_cls</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="nv">propertyNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="nv">propertyTitles</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L150">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1183,7 +1166,7 @@ the generated property definitions, add new definitions, or remove generated def
                     <code>
                     <a name="/c:objc(cs)SCClassDefinition(im)initWithClass:propertyGroups:"></a>
                     <a name="//apple_ref/objc/Method/-initWithClass:propertyGroups:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyGroups:">-initWithClass:propertyGroups:</a>
+                    <a class="token" href="#/c:objc(cs)SCClassDefinition(im)initWithClass:propertyGroups:">-initWithClass:<wbr>propertyGroups:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1208,14 +1191,9 @@ the generated property definitions, add new definitions, or remove generated def
                <span class="nf">propertyGroups</span><span class="p">:(</span><span class="n"><a href="../Classes/SCPropertyGroupArray.html">SCPropertyGroupArray</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">groups</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">with</span> <span class="nv">_cls</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span><span class="p">,</span> <span class="n">propertyGroups</span> <span class="nv">groups</span><span class="p">:</span> <span class="kt"><a href="../Classes/SCPropertyGroupArray.html">SCPropertyGroupArray</a></span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L157">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L157">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1226,9 +1204,11 @@ the generated property definitions, add new definitions, or remove generated def
               <div class="task-name-container">
                 <a name="/Configuration"></a>
                 <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
-                <a href="#/Configuration">
-                  <h3 class="section-name">Configuration</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><p>Configuration</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -1251,17 +1231,12 @@ the generated property definitions, add new definitions, or remove generated def
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">Class</span> <span class="n">cls</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cls</span><span class="p">:</span> <span class="kt">AnyClass</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">Class</span> <span class="n">cls</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCClassDefinition.h#L165">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCClassDefinition.h#L165">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1274,8 +1249,8 @@ the generated property definitions, add new definitions, or remove generated def
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

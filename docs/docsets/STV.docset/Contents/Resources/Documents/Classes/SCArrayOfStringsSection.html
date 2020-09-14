@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          STV 6.0.1(15) Docs
+          STV 6.0.1(18) Docs
         </a>
          (70% documented)
       </p>
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin%2Egithub%2Eio%2FSTVDocumentation%2Fdocsets%2FSTV%2Exml">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fdaveguerin.github.io%2FSTVDocumentation%2Fdocsets%2FSTV.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -167,9 +167,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCImagePickerCell.html">SCImagePickerCell</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/SCImageView.html">SCImageView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/SCInputAccessoryView.html">SCInputAccessoryView</a>
@@ -585,10 +582,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>SCArrayOfStringsSection</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SCArrayOfStringsSection</span> <span class="p">:</span> <span class="nc"><a href="../Classes/SCArrayOfObjectsSection.html">SCArrayOfObjectsSection</a></span></code></pre>
 
                 </div>
@@ -600,6 +598,9 @@ of string items and automatically generate its cells from these items. The class
 all its funtionality from its superclass: SCArrayOfItemsSection, except that its items
 array can only contain items of type NSString.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewSection.h#L780-L798">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -612,7 +613,7 @@ array can only contain items of type NSString.</p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfStringsSection(cm)sectionWithHeaderTitle:items:"></a>
                     <a name="//apple_ref/objc/Method/+sectionWithHeaderTitle:items:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsSection(cm)sectionWithHeaderTitle:items:">+sectionWithHeaderTitle:items:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsSection(cm)sectionWithHeaderTitle:items:">+sectionWithHeaderTitle:<wbr>items:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -664,7 +665,7 @@ array can only contain items of type NSString.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewSection.h#L788">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewSection.h#L788">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -674,7 +675,7 @@ array can only contain items of type NSString.</p>
                     <code>
                     <a name="/c:objc(cs)SCArrayOfStringsSection(im)initWithHeaderTitle:items:"></a>
                     <a name="//apple_ref/objc/Method/-initWithHeaderTitle:items:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsSection(im)initWithHeaderTitle:items:">-initWithHeaderTitle:items:</a>
+                    <a class="token" href="#/c:objc(cs)SCArrayOfStringsSection(im)initWithHeaderTitle:items:">-initWithHeaderTitle:<wbr>items:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -691,11 +692,6 @@ array can only contain items of type NSString.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithHeaderTitle</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">sectionHeaderTitle</span>
                               <span class="nf">items</span><span class="p">:(</span><span class="n">NSMutableArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">sectionItems</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n">headerTitle</span> <span class="nv">sectionHeaderTitle</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">items</span> <span class="nv">sectionItems</span><span class="p">:</span> <span class="kt">NSMutableArray</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -731,7 +727,7 @@ array can only contain items of type NSString.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/daveguerin/STV/tree/master/Sources/STV//include/SCTableViewSection.h#L796">Show on GitHub</a>
+                        <a href="https://github.com/daveguerin/STV/tree/main/Sources/STV//SCTableViewSection.h#L796">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -744,8 +740,8 @@ array can only contain items of type NSString.</p>
       </article>
     </div>
     <section class="footer">
-      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(15)</a> 20191121<br />&copy; Copyright 2010 - 2019 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">License</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV 6.0.1(18)</a> 20200914<br />&copy; Copyright 2010 - 2015 <a class="link" href="http://sensiblecocoa.com/" target="_blank" rel="external">Sensible Cocoa</a><br />&copy; Copyright 2019 - 2020 <a class="link" href="http://dgapps.ie/" target="_blank" rel="external">dgApps</a><br /><a class="link" href="https://github.com/daveguerin/STV/" target="_blank" rel="external">STV</a> and it&#39;s <a class="link" href="https://github.com/daveguerin/STVDocumentation/" target="_blank" rel="external">Documentation</a> are licensed under a <a class="link" href="https://github.com/daveguerin/STV/blob/master/License/STV.txt" target="_blank" rel="external">MIT License</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

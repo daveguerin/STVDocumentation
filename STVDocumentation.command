@@ -26,7 +26,7 @@ DATE=`(date +"%Y%m%d")`
 
 YEAR=`(date +"%Y")`
 
-COPYRIGHT="copyright: \"[STV ${NEW_MODULE_VERSION}](https://github.com/daveguerin/STV/) ${DATE}<br />&copy; Copyright 2010 - ${YEAR} [Sensible Cocoa](http://sensiblecocoa.com/)<br />&copy; Copyright ${YEAR} [dgApps](http://dgapps.ie/)<br />[License](https://github.com/daveguerin/STV/blob/master/License/STV.txt)\""
+COPYRIGHT="copyright: \"[STV ${NEW_MODULE_VERSION}](https://github.com/daveguerin/STV/) ${DATE}<br />&copy; Copyright 2010 - 2015 [Sensible Cocoa](http://sensiblecocoa.com/)<br />&copy; Copyright 2019 - ${YEAR} [dgApps](http://dgapps.ie/)<br />[STV](https://github.com/daveguerin/STV/) and it's [Documentation](https://github.com/daveguerin/STVDocumentation/) are licensed under a [MIT License](https://github.com/daveguerin/STV/blob/master/License/STV.txt)\""
 
 echo "\n**** STVDocumentation Updating to "$NEW_MODULE_VERSION
 
